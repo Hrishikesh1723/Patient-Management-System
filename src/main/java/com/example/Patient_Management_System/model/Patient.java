@@ -2,18 +2,28 @@ package com.example.Patient_Management_System.model;
 
 import java.util.List;
 import java.time.LocalDate;
+import jakarta.validation.constraints.*;
 
 public class Patient {
-    private String id; // unique identifier
+    private Long id;
+
+    @NotBlank(message = "Name is mandatory")
     private String name;
+
+    @Email(message = "Invalid email format")
     private String email;
+
+    @Pattern(regexp = "\\d{10}", message = "Phone number should be 10 digits")
     private String phone;
+
     private List<String> reportList;
+
+    @PastOrPresent(message = "Admit date must be in the past or present")
     private LocalDate admitDate;
 
     // Getters and Setters
-    public String getId() { return id; }
-    public void setId(String id) { this.id = id; }
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
     public String getEmail() { return email; }

@@ -2,43 +2,52 @@ package com.example.Patient_Management_System.controller;
 
 import com.example.Patient_Management_System.model.Patient;
 import com.example.Patient_Management_System.service.PatientService;
+import jakarta.validation.Valid;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/patients")
+@RequestMapping("/api/v1/patients")
 public class PatientController {
+
+    private static final Logger logger = LoggerFactory.getLogger(PatientController.class);
 
     @Autowired
     private PatientService patientService;
 
     @PostMapping
-    public String savePatient(@RequestBody Patient patient) {
-        patientService.addPatient(patient);
-        return "Patient added successfully!";
+    public ResponseEntity<Patient> savePatient(@Valid @RequestBody Patient patient) {
+        logger.info("Received request to save patient: {}", patient.getName());
+        return ResponseEntity.ok(patientService.savePatient(patient));
     }
 
     @GetMapping("/{id}")
-    public Patient getPatientById(@PathVariable String id) {
-        return patientService.getPatientById(id);
+    public ResponseEntity<Patient> getPatientById(@PathVariable Long id) {
+        logger.info("Fetching patient with ID: {}", id);
+        return ResponseEntity.ok(patientService.getPatientById(id));
     }
 
     @GetMapping
-    public List<Patient> getAllPatients() {
-        return patientService.getAllPatients();
+    public ResponseEntity<List<Patient>> getAllPatients() {
+        logger.info("Fetching all patients");
+        return ResponseEntity.ok(patientService.getAllPatients());
     }
 
     @PutMapping("/{id}")
-    public String updatePatient(@PathVariable String id, @RequestBody Patient patient) {
-        patientService.updatePatient(id, patient);
-        return "Patient updated successfully!";
+    public ResponseEntity<Patient> updatePatient(@PathVariable Long id, @Valid @RequestBody Patient updatedPatient) {
+        logger.info("Updating patient with ID: {}", id);
+        return ResponseEntity.ok(patientService.updatePatient(id, updatedPatient));
     }
 
     @DeleteMapping("/{id}")
-    public String deletePatient(@PathVariable String id) {
+    public ResponseEntity<String> deletePatientById(@PathVariable Long id) {
+        logger.info("Deleting patient with ID: {}", id);
         patientService.deletePatientById(id);
-        return "Patient deleted successfully!";
+        return ResponseEntity.ok("Patient deleted successfully.");
     }
 }
