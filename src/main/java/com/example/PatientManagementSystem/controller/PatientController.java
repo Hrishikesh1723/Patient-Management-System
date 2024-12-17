@@ -1,7 +1,7 @@
-package com.example.Patient_Management_System.controller;
+package com.example.PatientManagementSystem.controller;
 
-import com.example.Patient_Management_System.model.Patient;
-import com.example.Patient_Management_System.service.PatientService;
+import com.example.PatientManagementSystem.model.Patient;
+import com.example.PatientManagementSystem.service.PatientService;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,4 +1,4 @@
-package com.example.Patient_Management_System.model;
+package com.example.PatientManagementSystem.model;
 
 import java.util.List;
 import java.time.LocalDate;

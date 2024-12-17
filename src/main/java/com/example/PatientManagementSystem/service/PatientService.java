@@ -1,14 +1,13 @@
-package com.example.Patient_Management_System.service;
+package com.example.PatientManagementSystem.service;
 
-import com.example.Patient_Management_System.model.Patient;
-import com.example.Patient_Management_System.dao.PatientDAO;
+import com.example.PatientManagementSystem.model.Patient;
+import com.example.PatientManagementSystem.dao.PatientDAO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class PatientService {

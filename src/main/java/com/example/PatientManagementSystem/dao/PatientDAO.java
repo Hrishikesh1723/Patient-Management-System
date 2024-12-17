@@ -1,6 +1,6 @@
-package com.example.Patient_Management_System.dao;
+package com.example.PatientManagementSystem.dao;
 
-import com.example.Patient_Management_System.model.Patient;
+import com.example.PatientManagementSystem.model.Patient;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
