@@ -22,7 +22,7 @@ public class Patient {
     private String phone;
 
     @OneToMany(mappedBy = "patient", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<String> reportList;
+    private List<Report> reportList;
 
     @ManyToOne
     @JoinColumn(name = "doctor_id")
@@ -40,8 +40,8 @@ public class Patient {
     public void setEmail(String email) { this.email = email; }
     public String getPhone() { return phone; }
     public void setPhone(String phone) { this.phone = phone; }
-    public List<String> getReportList() { return reportList; }
-    public void setReportList(List<String> reportList) { this.reportList = reportList; }
+    public List<Report> getReportList() { return reportList; }
+    public void setReportList(List<Report> reportList) { this.reportList = reportList; }
     public Doctor getDoctor() {return  doctor; }
     public void setDoctor(Doctor doctor) { this.doctor = doctor; }
     public LocalDate getAdmitDate() { return admitDate; }
