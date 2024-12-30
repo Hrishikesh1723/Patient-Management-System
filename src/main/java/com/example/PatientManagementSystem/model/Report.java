@@ -1,6 +1,5 @@
 package com.example.PatientManagementSystem.model;
 
-
 import jakarta.persistence.*;
 
 @Entity
