@@ -1,7 +1,7 @@
 package com.example.PatientManagementSystem.model;
 
 import java.util.*;
-import jakarta.validation.*;
+import jakarta.validation.constraints.*;
 import jakarta.persistence.*;
 
 @Entity
@@ -11,6 +11,7 @@ public class Doctor {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long doctorId;
 
+    @NotBlank(message = "Name is mandatory")
     private String doctorName;
 
     @ManyToOne
