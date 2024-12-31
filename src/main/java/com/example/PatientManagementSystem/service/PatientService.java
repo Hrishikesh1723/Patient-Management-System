@@ -43,6 +43,7 @@ public class PatientService {
         existingPatient.setEmail(updatedPatient.getEmail());
         existingPatient.setPhone(updatedPatient.getPhone());
         existingPatient.setReportList(updatedPatient.getReportList());
+        existingPatient.setDoctor(updatedPatient.getDoctor());
         existingPatient.setAdmitDate(updatedPatient.getAdmitDate());
         logger.info("Patient with ID: {} updated successfully", id);
         return existingPatient;
