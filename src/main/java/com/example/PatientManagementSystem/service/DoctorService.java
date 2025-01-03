@@ -40,6 +40,7 @@ public class DoctorService {
         logger.info("Updating doctor with ID: {}", id);
         Doctor existingDoctor = getDoctorById(id);
         existingDoctor.setDoctorName(updatedDoctor.getDoctorName());
+        existingDoctor.setDepartmentId(updatedDoctor.getDepartmentId());
         existingDoctor.setDepartment(updatedDoctor.getDepartment());
         logger.info("Doctor with ID: {} updated successfully", id);
         return doctorDAO.save(existingDoctor);

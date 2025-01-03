@@ -18,7 +18,7 @@ public class ReportService {
     private ReportDAO reportDAO;
 
     public Report saveReport(Report report) {
-        logger.info("Saving report for patient: {}", report.getPatient().getName());
+        logger.info("Saving report for patient");
         return reportDAO.save(report);
     }
 

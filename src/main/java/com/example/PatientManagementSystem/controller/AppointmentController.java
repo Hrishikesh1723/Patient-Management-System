@@ -22,7 +22,7 @@ public class AppointmentController {
 
     @PostMapping
     public ResponseEntity<Appointment> saveAppointment(@Valid @RequestBody Appointment appointment) {
-        logger.info("Received request to save appointment for patient ID: {}", appointment.getPatient().getId());
+        logger.info("Received request to save appointment for patient ID");
         return ResponseEntity.ok(appointmentService.saveAppointment(appointment));
     }
 

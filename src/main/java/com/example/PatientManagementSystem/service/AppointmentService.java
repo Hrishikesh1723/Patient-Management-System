@@ -18,7 +18,7 @@ public class AppointmentService {
     private AppointmentDAO appointmentDAO;
 
     public Appointment saveAppointment(Appointment appointment) {
-        logger.info("Saving appointment for patient: {}", appointment.getPatient().getName());
+        logger.info("Saving appointment for patient");
         return appointmentDAO.save(appointment);
     }
 
@@ -42,6 +42,8 @@ public class AppointmentService {
         existingAppointment.setAppointmentDate(updatedAppointment.getAppointmentDate());
         existingAppointment.setDoctor(updatedAppointment.getDoctor());
         existingAppointment.setPatient(updatedAppointment.getPatient());
+        existingAppointment.setDoctorId(updatedAppointment.getDoctorId());
+        existingAppointment.setPatientId(updatedAppointment.getPatientId());
         logger.info("Appointment with ID: {} updated successfully", id);
         return appointmentDAO.save(existingAppointment);
     }

@@ -22,7 +22,7 @@ public class ReportController {
 
     @PostMapping
     public ResponseEntity<Report> saveReport(@Valid @RequestBody Report report) {
-        logger.info("Received request to save report for patient ID: {}", report.getPatient().getId());
+        logger.info("Received request to save report for patient");
         return ResponseEntity.ok(reportService.saveReport(report));
     }
 
