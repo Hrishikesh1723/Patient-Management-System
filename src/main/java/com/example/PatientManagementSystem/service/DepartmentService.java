@@ -1,5 +1,6 @@
 package com.example.PatientManagementSystem.service;
 
+import com.example.PatientManagementSystem.exception.DataAccessException;
 import com.example.PatientManagementSystem.exception.ServiceException;
 import com.example.PatientManagementSystem.model.Department;
 import com.example.PatientManagementSystem.dao.DepartmentDAO;
@@ -21,8 +22,8 @@ public class DepartmentService {
     public Department saveDepartment(Department department) {
         try {
             logger.info("Saving department: {}", department.getDepartmentName());
-            return departmentDAO.save(department);
-        } catch (Exception ex) {
+            return departmentDAO.safeSave(department);
+        } catch (DataAccessException ex) {
             logger.error("Error saving department: {}", ex.getMessage(), ex);
             throw new ServiceException("Failed to save department", ex);
         }
@@ -31,14 +32,12 @@ public class DepartmentService {
     public Department getDepartmentById(Long id) {
         try {
             logger.info("Retrieving department by ID: {}", id);
-            return departmentDAO.findById(id)
+            return departmentDAO.safeFindById(id)
                     .orElseThrow(() -> {
                         logger.error("Department not found with ID: {}", id);
                         return new ServiceException("Department not found with ID: " + id);
                     });
-        } catch (ServiceException ex) {
-            throw ex; // Re-throw specific exceptions
-        } catch (Exception ex) {
+        } catch (DataAccessException ex) {
             logger.error("Error retrieving department with ID {}: {}", id, ex.getMessage(), ex);
             throw new ServiceException("Failed to retrieve department with ID: " + id, ex);
         }
@@ -60,10 +59,8 @@ public class DepartmentService {
             Department existingDepartment = getDepartmentById(id);
             existingDepartment.setDepartmentName(updatedDepartment.getDepartmentName());
             logger.info("Department with ID: {} updated successfully", id);
-            return departmentDAO.save(existingDepartment);
-        } catch (ServiceException ex) {
-            throw ex; // Re-throw specific exceptions
-        } catch (Exception ex) {
+            return departmentDAO.safeSave(existingDepartment);
+        } catch (DataAccessException ex) {
             logger.error("Error updating department with ID {}: {}", id, ex.getMessage(), ex);
             throw new ServiceException("Failed to update department with ID: " + id, ex);
         }
@@ -76,11 +73,9 @@ public class DepartmentService {
                 logger.error("Department with ID: {} does not exist", id);
                 throw new ServiceException("Department with ID " + id + " does not exist");
             }
-            departmentDAO.deleteById(id);
+            departmentDAO.safeDeleteById(id);
             logger.info("Department with ID: {} deleted successfully", id);
-        } catch (ServiceException ex) {
-            throw ex; // Re-throw specific exceptions
-        } catch (Exception ex) {
+        } catch (DataAccessException ex) {
             logger.error("Error deleting department with ID {}: {}", id, ex.getMessage(), ex);
             throw new ServiceException("Failed to delete department with ID: " + id, ex);
         }

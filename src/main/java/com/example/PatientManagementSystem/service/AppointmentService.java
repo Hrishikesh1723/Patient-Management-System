@@ -1,5 +1,6 @@
 package com.example.PatientManagementSystem.service;
 
+import com.example.PatientManagementSystem.exception.DataAccessException;
 import com.example.PatientManagementSystem.exception.ServiceException;
 import com.example.PatientManagementSystem.model.Appointment;
 import com.example.PatientManagementSystem.dao.AppointmentDAO;
@@ -21,8 +22,8 @@ public class AppointmentService {
     public Appointment saveAppointment(Appointment appointment) {
         try {
             logger.info("Saving appointment for patient");
-            return appointmentDAO.save(appointment);
-        } catch (Exception ex) {
+            return appointmentDAO.safeSave(appointment);
+        } catch (DataAccessException ex) {
             logger.error("Error saving appointment: {}", ex.getMessage(), ex);
             throw new ServiceException("Failed to save appointment", ex);
         }
@@ -31,14 +32,12 @@ public class AppointmentService {
     public Appointment getAppointmentById(Long id) {
         try {
             logger.info("Retrieving appointment by ID: {}", id);
-            return appointmentDAO.findById(id)
+            return appointmentDAO.safeFindById(id)
                     .orElseThrow(() -> {
                         logger.error("Appointment not found with ID: {}", id);
                         return new ServiceException("Appointment not found with ID: " + id);
                     });
-        } catch (ServiceException ex) {
-            throw ex; // Re-throw specific exceptions
-        } catch (Exception ex) {
+        } catch (DataAccessException ex) {
             logger.error("Error retrieving appointment with ID {}: {}", id, ex.getMessage(), ex);
             throw new ServiceException("Failed to retrieve appointment with ID: " + id, ex);
         }
@@ -64,10 +63,8 @@ public class AppointmentService {
             existingAppointment.setDoctorId(updatedAppointment.getDoctorId());
             existingAppointment.setPatientId(updatedAppointment.getPatientId());
             logger.info("Appointment with ID: {} updated successfully", id);
-            return appointmentDAO.save(existingAppointment);
-        } catch (ServiceException ex) {
-            throw ex; // Re-throw specific exceptions
-        } catch (Exception ex) {
+            return appointmentDAO.safeSave(existingAppointment);
+        } catch (DataAccessException ex) {
             logger.error("Error updating appointment with ID {}: {}", id, ex.getMessage(), ex);
             throw new ServiceException("Failed to update appointment with ID: " + id, ex);
         }
@@ -80,11 +77,9 @@ public class AppointmentService {
                 logger.error("Appointment with ID: {} does not exist", id);
                 throw new ServiceException("Appointment with ID " + id + " does not exist");
             }
-            appointmentDAO.deleteById(id);
+            appointmentDAO.safeDeleteById(id);
             logger.info("Appointment with ID: {} deleted successfully", id);
-        } catch (ServiceException ex) {
-            throw ex; // Re-throw specific exceptions
-        } catch (Exception ex) {
+        } catch (DataAccessException ex) {
             logger.error("Error deleting appointment with ID {}: {}", id, ex.getMessage(), ex);
             throw new ServiceException("Failed to delete appointment with ID: " + id, ex);
         }

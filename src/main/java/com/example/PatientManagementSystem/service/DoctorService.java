@@ -1,5 +1,6 @@
 package com.example.PatientManagementSystem.service;
 
+import com.example.PatientManagementSystem.exception.DataAccessException;
 import com.example.PatientManagementSystem.exception.ServiceException;
 import com.example.PatientManagementSystem.model.Doctor;
 import com.example.PatientManagementSystem.dao.DoctorDAO;
@@ -21,8 +22,8 @@ public class DoctorService {
     public Doctor saveDoctor(Doctor doctor) {
         try {
             logger.info("Saving doctor: {}", doctor.getDoctorName());
-            return doctorDAO.save(doctor);
-        } catch (Exception ex) {
+            return doctorDAO.safeSave(doctor);
+        } catch (DataAccessException ex) {
             logger.error("Error saving doctor: {}", ex.getMessage(), ex);
             throw new ServiceException("Failed to save doctor", ex);
         }
@@ -31,14 +32,12 @@ public class DoctorService {
     public Doctor getDoctorById(Long id) {
         try {
             logger.info("Retrieving doctor by ID: {}", id);
-            return doctorDAO.findById(id)
+            return doctorDAO.safeFindById(id)
                     .orElseThrow(() -> {
                         logger.error("Doctor not found with ID: {}", id);
                         return new ServiceException("Doctor not found with ID: " + id);
                     });
-        } catch (ServiceException ex) {
-            throw ex; // Re-throw specific exceptions
-        } catch (Exception ex) {
+        } catch (DataAccessException ex) {
             logger.error("Error retrieving doctor with ID {}: {}", id, ex.getMessage(), ex);
             throw new ServiceException("Failed to retrieve doctor with ID: " + id, ex);
         }
@@ -62,10 +61,8 @@ public class DoctorService {
             existingDoctor.setDepartmentId(updatedDoctor.getDepartmentId());
             existingDoctor.setDepartment(updatedDoctor.getDepartment());
             logger.info("Doctor with ID: {} updated successfully", id);
-            return doctorDAO.save(existingDoctor);
-        } catch (ServiceException ex) {
-            throw ex; // Re-throw specific exceptions
-        } catch (Exception ex) {
+            return doctorDAO.safeSave(existingDoctor);
+        } catch (DataAccessException ex) {
             logger.error("Error updating doctor with ID {}: {}", id, ex.getMessage(), ex);
             throw new ServiceException("Failed to update doctor with ID: " + id, ex);
         }
@@ -78,11 +75,9 @@ public class DoctorService {
                 logger.error("Doctor with ID: {} does not exist", id);
                 throw new ServiceException("Doctor with ID " + id + " does not exist");
             }
-            doctorDAO.deleteById(id);
+            doctorDAO.safeDeleteById(id);
             logger.info("Doctor with ID: {} deleted successfully", id);
-        } catch (ServiceException ex) {
-            throw ex; // Re-throw specific exceptions
-        } catch (Exception ex) {
+        } catch (DataAccessException ex) {
             logger.error("Error deleting doctor with ID {}: {}", id, ex.getMessage(), ex);
             throw new ServiceException("Failed to delete doctor with ID: " + id, ex);
         }

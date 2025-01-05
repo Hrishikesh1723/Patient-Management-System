@@ -1,5 +1,6 @@
 package com.example.PatientManagementSystem.service;
 
+import com.example.PatientManagementSystem.exception.DataAccessException;
 import com.example.PatientManagementSystem.exception.ServiceException;
 import com.example.PatientManagementSystem.model.Report;
 import com.example.PatientManagementSystem.dao.ReportDAO;
@@ -21,8 +22,8 @@ public class ReportService {
     public Report saveReport(Report report) {
         try {
             logger.info("Saving report for patient");
-            return reportDAO.save(report);
-        } catch (Exception ex) {
+            return reportDAO.safeSave(report);
+        } catch (DataAccessException ex) {
             logger.error("Error saving report: {}", ex.getMessage(), ex);
             throw new ServiceException("Failed to save report", ex);
         }
@@ -31,14 +32,12 @@ public class ReportService {
     public Report getReportById(Long id) {
         try {
             logger.info("Retrieving report by ID: {}", id);
-            return reportDAO.findById(id)
+            return reportDAO.safeFindById(id)
                     .orElseThrow(() -> {
                         logger.error("Report not found with ID: {}", id);
                         return new ServiceException("Report not found with ID: " + id);
                     });
-        } catch (ServiceException ex) {
-            throw ex; // Re-throw specific exceptions
-        } catch (Exception ex) {
+        } catch (DataAccessException ex) {
             logger.error("Error retrieving report with ID {}: {}", id, ex.getMessage(), ex);
             throw new ServiceException("Failed to retrieve report with ID: " + id, ex);
         }
@@ -61,11 +60,9 @@ public class ReportService {
                 logger.error("Report with ID: {} does not exist", id);
                 throw new ServiceException("Report with ID " + id + " does not exist");
             }
-            reportDAO.deleteById(id);
+            reportDAO.safeDeleteById(id);
             logger.info("Report with ID: {} deleted successfully", id);
-        } catch (ServiceException ex) {
-            throw ex; // Re-throw specific exceptions
-        } catch (Exception ex) {
+        } catch (DataAccessException ex) {
             logger.error("Error deleting report with ID {}: {}", id, ex.getMessage(), ex);
             throw new ServiceException("Failed to delete report with ID: " + id, ex);
         }
