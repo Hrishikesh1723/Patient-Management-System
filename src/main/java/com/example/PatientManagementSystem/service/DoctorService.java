@@ -1,5 +1,6 @@
 package com.example.PatientManagementSystem.service;
 
+import com.example.PatientManagementSystem.exception.ServiceException;
 import com.example.PatientManagementSystem.model.Doctor;
 import com.example.PatientManagementSystem.dao.DoctorDAO;
 import org.slf4j.Logger;
@@ -18,37 +19,72 @@ public class DoctorService {
     private DoctorDAO doctorDAO;
 
     public Doctor saveDoctor(Doctor doctor) {
-        logger.info("Saving doctor: {}", doctor.getDoctorName());
-        return doctorDAO.save(doctor);
+        try {
+            logger.info("Saving doctor: {}", doctor.getDoctorName());
+            return doctorDAO.save(doctor);
+        } catch (Exception ex) {
+            logger.error("Error saving doctor: {}", ex.getMessage(), ex);
+            throw new ServiceException("Failed to save doctor", ex);
+        }
     }
 
     public Doctor getDoctorById(Long id) {
-        logger.info("Retrieving doctor by ID: {}", id);
-        return doctorDAO.findById(id)
-                .orElseThrow(() -> {
-                    logger.error("Doctor not found with ID: {}", id);
-                    return new IllegalArgumentException("Doctor not found with ID: " + id);
-                });
+        try {
+            logger.info("Retrieving doctor by ID: {}", id);
+            return doctorDAO.findById(id)
+                    .orElseThrow(() -> {
+                        logger.error("Doctor not found with ID: {}", id);
+                        return new ServiceException("Doctor not found with ID: " + id);
+                    });
+        } catch (ServiceException ex) {
+            throw ex; // Re-throw specific exceptions
+        } catch (Exception ex) {
+            logger.error("Error retrieving doctor with ID {}: {}", id, ex.getMessage(), ex);
+            throw new ServiceException("Failed to retrieve doctor with ID: " + id, ex);
+        }
     }
 
     public List<Doctor> getAllDoctors() {
-        logger.info("Fetching all doctors");
-        return doctorDAO.findAll();
+        try {
+            logger.info("Fetching all doctors");
+            return doctorDAO.findAll();
+        } catch (Exception ex) {
+            logger.error("Error fetching all doctors: {}", ex.getMessage(), ex);
+            throw new ServiceException("Failed to fetch all doctors", ex);
+        }
     }
 
     public Doctor updateDoctor(Long id, Doctor updatedDoctor) {
-        logger.info("Updating doctor with ID: {}", id);
-        Doctor existingDoctor = getDoctorById(id);
-        existingDoctor.setDoctorName(updatedDoctor.getDoctorName());
-        existingDoctor.setDepartmentId(updatedDoctor.getDepartmentId());
-        existingDoctor.setDepartment(updatedDoctor.getDepartment());
-        logger.info("Doctor with ID: {} updated successfully", id);
-        return doctorDAO.save(existingDoctor);
+        try {
+            logger.info("Updating doctor with ID: {}", id);
+            Doctor existingDoctor = getDoctorById(id);
+            existingDoctor.setDoctorName(updatedDoctor.getDoctorName());
+            existingDoctor.setDepartmentId(updatedDoctor.getDepartmentId());
+            existingDoctor.setDepartment(updatedDoctor.getDepartment());
+            logger.info("Doctor with ID: {} updated successfully", id);
+            return doctorDAO.save(existingDoctor);
+        } catch (ServiceException ex) {
+            throw ex; // Re-throw specific exceptions
+        } catch (Exception ex) {
+            logger.error("Error updating doctor with ID {}: {}", id, ex.getMessage(), ex);
+            throw new ServiceException("Failed to update doctor with ID: " + id, ex);
+        }
     }
 
     public void deleteDoctorById(Long id) {
-        logger.info("Deleting doctor with ID: {}", id);
-        doctorDAO.deleteById(id);
-        logger.info("Doctor with ID: {} deleted successfully", id);
+        try {
+            logger.info("Deleting doctor with ID: {}", id);
+            if (!doctorDAO.existsById(id)) {
+                logger.error("Doctor with ID: {} does not exist", id);
+                throw new ServiceException("Doctor with ID " + id + " does not exist");
+            }
+            doctorDAO.deleteById(id);
+            logger.info("Doctor with ID: {} deleted successfully", id);
+        } catch (ServiceException ex) {
+            throw ex; // Re-throw specific exceptions
+        } catch (Exception ex) {
+            logger.error("Error deleting doctor with ID {}: {}", id, ex.getMessage(), ex);
+            throw new ServiceException("Failed to delete doctor with ID: " + id, ex);
+        }
     }
 }
