@@ -1,11 +1,13 @@
 package com.example.PatientManagementSystem.controller;
 
+import com.example.PatientManagementSystem.exception.ApiRequestException;
 import com.example.PatientManagementSystem.model.Department;
 import com.example.PatientManagementSystem.service.DepartmentService;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -22,33 +24,57 @@ public class DepartmentController {
 
     @PostMapping
     public ResponseEntity<Department> saveDepartment(@Valid @RequestBody Department department) {
-        logger.info("Received request to save department: {}", department.getDepartmentName());
-        return ResponseEntity.ok(departmentService.saveDepartment(department));
+        try {
+            logger.info("Received request to save department: {}", department.getDepartmentName());
+            return ResponseEntity.status(HttpStatus.CREATED).body(departmentService.saveDepartment(department));
+        } catch (Exception ex) {
+            logger.error("Error saving department: {}", ex.getMessage(), ex);
+            throw new ApiRequestException("Failed to save department", ex);
+        }
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<Department> getDepartmentById(@PathVariable Long id) {
-        logger.info("Fetching department with ID: {}", id);
-        return ResponseEntity.ok(departmentService.getDepartmentById(id));
+        try {
+            logger.info("Fetching department with ID: {}", id);
+            return ResponseEntity.ok(departmentService.getDepartmentById(id));
+        } catch (Exception ex) {
+            logger.error("Error fetching department with ID {}: {}", id, ex.getMessage(), ex);
+            throw new ApiRequestException("Department not found with ID: " + id, ex);
+        }
     }
 
     @GetMapping
     public ResponseEntity<List<Department>> getAllDepartments() {
-        logger.info("Fetching all departments");
-        return ResponseEntity.ok(departmentService.getAllDepartments());
+        try {
+            logger.info("Fetching all departments");
+            return ResponseEntity.ok(departmentService.getAllDepartments());
+        } catch (Exception ex) {
+            logger.error("Error fetching departments: {}", ex.getMessage(), ex);
+            throw new ApiRequestException("Failed to fetch departments", ex);
+        }
     }
 
     @PutMapping("/{id}")
     public ResponseEntity<Department> updateDepartment(@PathVariable Long id, @Valid @RequestBody Department updatedDepartment) {
-        logger.info("Updating department with ID: {}", id);
-        return ResponseEntity.ok(departmentService.updateDepartment(id, updatedDepartment));
+        try {
+            logger.info("Updating department with ID: {}", id);
+            return ResponseEntity.ok(departmentService.updateDepartment(id, updatedDepartment));
+        } catch (Exception ex) {
+            logger.error("Error updating department with ID {}: {}", id, ex.getMessage(), ex);
+            throw new ApiRequestException("Failed to update department with ID: " + id, ex);
+        }
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deleteDepartmentById(@PathVariable Long id) {
-        logger.info("Deleting department with ID: {}", id);
-        departmentService.deleteDepartmentById(id);
-        return ResponseEntity.ok("Department deleted successfully.");
+        try {
+            logger.info("Deleting department with ID: {}", id);
+            departmentService.deleteDepartmentById(id);
+            return ResponseEntity.ok("Department deleted successfully.");
+        } catch (Exception ex) {
+            logger.error("Error deleting department with ID {}: {}", id, ex.getMessage(), ex);
+            throw new ApiRequestException("Failed to delete department with ID: " + id, ex);
+        }
     }
 }
-
