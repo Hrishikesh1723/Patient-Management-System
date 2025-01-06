@@ -1,10 +1,13 @@
 package com.example.PatientManagementSystem.dao;
 
 import com.example.PatientManagementSystem.exception.DataAccessException;
+import com.example.PatientManagementSystem.model.Appointment;
 import com.example.PatientManagementSystem.model.Department;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -13,6 +16,8 @@ import java.util.Optional;
 @Repository
 public interface DepartmentDAO extends JpaRepository<Department, Long> {
     Logger logger = LoggerFactory.getLogger(DepartmentDAO.class);
+
+    Page<Department> findByDepartmentIdContainingOrDepartmentNameContaining(Long departmentId, String departmentName, Pageable pageable);
 
     default Optional<Department> safeFindById(Long id) {
         try {

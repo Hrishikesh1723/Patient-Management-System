@@ -7,8 +7,14 @@ import com.example.PatientManagementSystem.dao.PatientDAO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @Service
@@ -43,10 +49,29 @@ public class PatientService {
         }
     }
 
-    public List<Patient> getAllPatients() {
+    public Page<Patient> getAllPatients(int page, int size, String[] sort, String search) {
         try {
+            logger.info("Sort options received: {}", Arrays.toString(sort));
             logger.info("Fetching all patients");
-            return patientDAO.findAll();
+            // Set up pagination and sorting
+            List<Sort.Order> orders = new ArrayList<>();
+            String sortField = sort[0];
+            String sortDirection = sort[1];
+            // Validate sort direction
+            Sort.Direction direction;
+            try {
+                direction = Sort.Direction.fromString(sortDirection);
+            } catch (IllegalArgumentException e) {
+                throw new IllegalArgumentException("Invalid sort direction: " + sortDirection + ". Expected 'asc' or 'desc'");
+            }
+            orders.add(new Sort.Order(direction, sortField));
+            Pageable pageable = PageRequest.of(page - 1, size, Sort.by(orders));
+
+            // Return filtered results
+            if (search != null && !search.isEmpty()) {
+                return patientDAO.findByPatientIdContainingOrNameContaining(Long.valueOf(search), search, pageable);
+            }
+            return patientDAO.findAll(pageable);
         } catch (Exception ex) {
             logger.error("Error fetching all patients: {}", ex.getMessage(), ex);
             throw new ServiceException("Failed to fetch all patients", ex);

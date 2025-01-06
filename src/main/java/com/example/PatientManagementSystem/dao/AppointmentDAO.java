@@ -4,12 +4,16 @@ import com.example.PatientManagementSystem.exception.DataAccessException;
 import com.example.PatientManagementSystem.model.Appointment;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
 
 public interface AppointmentDAO extends JpaRepository<Appointment, Long>{
     Logger logger = LoggerFactory.getLogger(AppointmentDAO.class);
+
+    Page<Appointment> findByAppointmentId(Long appointmentId, Pageable pageable);
 
     default Optional<Appointment> safeFindById(Long id) {
         try {

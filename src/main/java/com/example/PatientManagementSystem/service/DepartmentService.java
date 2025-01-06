@@ -7,8 +7,13 @@ import com.example.PatientManagementSystem.dao.DepartmentDAO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -43,10 +48,28 @@ public class DepartmentService {
         }
     }
 
-    public List<Department> getAllDepartments() {
+    public Page<Department> getAllDepartments(int page, int size, String[] sort, String search) {
         try {
             logger.info("Fetching all departments");
-            return departmentDAO.findAll();
+            // Set up pagination and sorting
+            List<Sort.Order> orders = new ArrayList<>();
+            String sortField = sort[0];
+            String sortDirection = sort[1];
+            // Validate sort direction
+            Sort.Direction direction;
+            try {
+                direction = Sort.Direction.fromString(sortDirection);
+            } catch (IllegalArgumentException e) {
+                throw new IllegalArgumentException("Invalid sort direction: " + sortDirection + ". Expected 'asc' or 'desc'");
+            }
+            orders.add(new Sort.Order(direction, sortField));
+            Pageable pageable = PageRequest.of(page - 1, size, Sort.by(orders));
+
+            // Return filtered results
+            if (search != null && !search.isEmpty()) {
+                return departmentDAO.findByDepartmentIdContainingOrDepartmentNameContaining(Long.valueOf(search), search, pageable);
+            }
+            return departmentDAO.findAll(pageable);
         } catch (Exception ex) {
             logger.error("Error fetching all departments: {}", ex.getMessage(), ex);
             throw new ServiceException("Failed to fetch all departments", ex);

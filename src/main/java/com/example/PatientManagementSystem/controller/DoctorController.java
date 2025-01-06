@@ -7,6 +7,7 @@ import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -45,10 +46,16 @@ public class DoctorController {
     }
 
     @GetMapping
-    public ResponseEntity<List<Doctor>> getAllDoctors() {
+    public ResponseEntity<Page<Doctor>> getAllDoctors(
+            @RequestParam(defaultValue = "1") int page,
+            @RequestParam(defaultValue = "20") int size,
+            @RequestParam(defaultValue = "doctorId,asc") String[] sort,
+            @RequestParam(required = false) String search
+    ) {
         try {
             logger.info("Fetching all doctors");
-            return ResponseEntity.ok(doctorService.getAllDoctors());
+            Page<Doctor> doctors = doctorService.getAllDoctors(page, size, sort, search);
+            return ResponseEntity.ok(doctors);
         } catch (Exception ex) {
             logger.error("Error fetching doctors: {}", ex.getMessage(), ex);
             throw new ApiRequestException("Failed to fetch doctors", ex);
