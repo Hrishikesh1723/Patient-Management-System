@@ -34,7 +34,7 @@ Explore the API endpoints using the **Postman Collection**:
 ## Getting Started
 
 ### Prerequisites
-- Java (version X.X or later)
+- Java (version 23 or later)
 - Spring Boot
 - Postman (for testing the APIs)
 
