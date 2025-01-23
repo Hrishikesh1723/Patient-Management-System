@@ -1,5 +1,6 @@
 package com.example.PatientManagementSystem.model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 
 @Entity
@@ -17,6 +18,7 @@ public class Report {
     private Long patientId;
 
     @ManyToOne
+    @Schema(hidden = true)
     @JoinColumn(name = "patient_id", insertable = false, updatable = false, nullable = false)
     private Patient patient;
 

@@ -3,6 +3,7 @@ package com.example.PatientManagementSystem.controller;
 import com.example.PatientManagementSystem.exception.ApiRequestException;
 import com.example.PatientManagementSystem.model.Report;
 import com.example.PatientManagementSystem.service.ReportService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@Tag(name = "Report Endpoints", description = "Represents medical reports linked to patients, such as diagnostic tests or health summaries. Endpoints allow adding, retrieving, and deleting reports")
 @RequestMapping("/api/v1/reports")
 public class ReportController {
 

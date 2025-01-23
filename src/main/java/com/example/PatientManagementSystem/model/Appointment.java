@@ -1,5 +1,6 @@
 package com.example.PatientManagementSystem.model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
@@ -18,10 +19,12 @@ public class Appointment {
     private Long doctorId;
 
     @ManyToOne
+    @Schema(hidden = true)
     @JoinColumn(name = "patient_id", insertable = false, updatable = false, nullable = false)
     private Patient patient;
 
     @ManyToOne
+    @Schema(hidden = true)
     @JoinColumn(name = "doctor_id", insertable = false, updatable = false, nullable = false)
     private Doctor doctor;
 

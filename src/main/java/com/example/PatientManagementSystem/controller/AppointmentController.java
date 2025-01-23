@@ -3,6 +3,8 @@ package com.example.PatientManagementSystem.controller;
 import com.example.PatientManagementSystem.exception.ApiRequestException;
 import com.example.PatientManagementSystem.model.Appointment;
 import com.example.PatientManagementSystem.service.AppointmentService;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,6 +17,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@Tag(name = "Appointment Endpoints", description = "Represents scheduled consultations between patients and doctors. Includes endpoints to create, modify, retrieve, and delete appointments.")
 @RequestMapping("/api/v1/appointments")
 public class AppointmentController {
 
@@ -47,6 +50,7 @@ public class AppointmentController {
 
     @GetMapping
     public ResponseEntity<Page<Appointment>> getAllAppointments(
+            @Parameter(hidden = true)
             @RequestParam(defaultValue = "1") int page,
             @RequestParam(defaultValue = "20") int size,
             @RequestParam(defaultValue = "appointmentId,asc") String[] sort,

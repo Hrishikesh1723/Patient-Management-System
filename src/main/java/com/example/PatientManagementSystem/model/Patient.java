@@ -4,6 +4,7 @@ import java.util.List;
 import java.time.LocalDate;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.*;
 import jakarta.persistence.*;
 
@@ -31,6 +32,7 @@ public class Patient {
     private Long doctorId;
 
     @ManyToOne
+    @Schema(hidden = true)
     @JoinColumn(name = "doctor_id", insertable = false, updatable = false, nullable = false)
     private Doctor doctor;
 

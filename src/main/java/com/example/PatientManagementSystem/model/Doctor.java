@@ -3,6 +3,7 @@ package com.example.PatientManagementSystem.model;
 import java.util.*;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.*;
 import jakarta.persistence.*;
 
@@ -22,6 +23,7 @@ public class Doctor {
     private Long departmentId;
 
     @ManyToOne
+    @Schema(hidden = true)
     @JoinColumn(name = "department_id", insertable = false, updatable = false, nullable = false)
     private Department department;
 
