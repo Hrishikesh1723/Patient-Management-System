@@ -3,6 +3,7 @@ package com.example.PatientManagementSystem.controller;
 import com.example.PatientManagementSystem.exception.ApiRequestException;
 import com.example.PatientManagementSystem.model.Patient;
 import com.example.PatientManagementSystem.service.PatientService;
+import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
@@ -15,6 +16,11 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * Controller class for managing patients in the patient management system.
+ * Provides REST endpoints for creating, retrieving, updating, and deleting patient records.
+ * Also supports pagination, sorting, and searching functionalities.
+ */
 @RestController
 @Tag(name = "Patient Endpoints", description = "Represents individuals receiving medical care. Includes endpoints to manage patient details like name, contact information, assigned doctor, and admission date")
 @RequestMapping("/api/v1/patients")
@@ -25,6 +31,14 @@ public class PatientController {
     @Autowired
     private PatientService patientService;
 
+    /**
+     * Saves a new patient.
+     *
+     * @param patient The patient details to be saved.
+     * @return A ResponseEntity containing the saved patient.
+     * @throws ApiRequestException if there is an error during the save operation.
+     */
+    @Operation(summary = "Save New Patient", description = "Adds a new patient to the system. Requires patient details such as name, email, phone number, doctor ID, and admit date.")
     @PostMapping
     public ResponseEntity<Patient> savePatient(@Valid @RequestBody Patient patient) {
         try {
@@ -36,6 +50,14 @@ public class PatientController {
         }
     }
 
+    /**
+     * Retrieves a patient by their ID.
+     *
+     * @param id The ID of the patient to retrieve.
+     * @return A ResponseEntity containing the patient details.
+     * @throws ApiRequestException if the patient with the given ID is not found.
+     */
+    @Operation(summary = "Fetch Patient Details by ID", description = "Retrieves the details of a specific patient using their ID.")
     @GetMapping("/{id}")
     public ResponseEntity<Patient> getPatientById(@PathVariable Long id) {
         try {
@@ -47,6 +69,17 @@ public class PatientController {
         }
     }
 
+    /**
+     * Retrieves a paginated list of patients with optional sorting and filtering.
+     *
+     * @param page   The page number to retrieve (default: 1).
+     * @param size   The number of records per page (default: 20).
+     * @param sort   The sort criteria in the format "field,order" (default: "patientId,asc").
+     * @param search An optional search query to filter patients.
+     * @return A ResponseEntity containing a paginated list of patients.
+     * @throws ApiRequestException if there is an error during the retrieval process.
+     */
+    @Operation(summary= "Fetch Patient List", description = "Retrieves a paginated list of patients, with optional sorting.")
     @GetMapping
     public ResponseEntity<Page<Patient>> getAllPatients(
             @RequestParam(defaultValue = "1") int page,
@@ -64,6 +97,15 @@ public class PatientController {
         }
     }
 
+    /**
+     * Updates an existing patient by their ID.
+     *
+     * @param id The ID of the patient to update.
+     * @param updatedPatient The updated patient details.
+     * @return A ResponseEntity containing the updated patient.
+     * @throws ApiRequestException if there is an error during the update process.
+     */
+    @Operation(summary = "Edit Patient Details", description = "Updates an existing patient's details using their ID.")
     @PutMapping("/{id}")
     public ResponseEntity<Patient> updatePatient(@PathVariable Long id, @Valid @RequestBody Patient updatedPatient) {
         try {
@@ -75,6 +117,14 @@ public class PatientController {
         }
     }
 
+    /**
+     * Deletes a patient by their ID.
+     *
+     * @param id The ID of the patient to delete.
+     * @return A ResponseEntity containing a success message.
+     * @throws ApiRequestException if there is an error during the delete operation.
+     */
+    @Operation(summary = "Delete Patient by ID", description = "Removes a patient record from the system using their unique ID.")
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deletePatientById(@PathVariable Long id) {
         try {

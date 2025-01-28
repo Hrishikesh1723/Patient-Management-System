@@ -1,5 +1,6 @@
 package com.example.PatientManagementSystem.service;
 
+import com.example.PatientManagementSystem.exception.ApiRequestException;
 import com.example.PatientManagementSystem.exception.DataAccessException;
 import com.example.PatientManagementSystem.exception.ServiceException;
 import com.example.PatientManagementSystem.model.Report;
@@ -16,6 +17,10 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Service layer for managing reports.
+ * Provides business logic for saving, retrieving, and deleting appointments.
+ */
 @Service
 public class ReportService {
 
@@ -24,6 +29,12 @@ public class ReportService {
     @Autowired
     private ReportDAO reportDAO;
 
+    /**
+     * Saves a new report.
+     *
+     * @param report The report details to be saved.
+     * @throws ServiceException if there is an error during the save operation.
+     */
     public Report saveReport(Report report) {
         try {
             logger.info("Saving report for patient");
@@ -34,6 +45,12 @@ public class ReportService {
         }
     }
 
+    /**
+     * Retrieves a report by its ID.
+     *
+     * @param id The ID of the report to retrieve.
+     * @throws ServiceException if the report with the given ID is not found.
+     */
     public Report getReportById(Long id) {
         try {
             logger.info("Retrieving report by ID: {}", id);
@@ -48,6 +65,15 @@ public class ReportService {
         }
     }
 
+    /**
+     * Retrieves a paginated list of reports with optional sorting and filtering.
+     *
+     * @param page   The page number to retrieve (default: 1).
+     * @param size   The number of records per page (default: 20).
+     * @param sort   The sort criteria in the format "field,order" (default: "reportId,asc").
+     * @param search An optional search query to filter reports.
+     * @throws ServiceException if there is an error during the retrieval process.
+     */
     public Page<Report> getAllReports(int page, int size, String[] sort, String search) {
         try {
             logger.info("Fetching all reports");
@@ -76,6 +102,12 @@ public class ReportService {
         }
     }
 
+    /**
+     * Deletes a report by its ID.
+     *
+     * @param id The ID of the report to delete.
+     * @throws ServiceException if there is an error during the delete operation.
+     */
     public void deleteReportById(Long id) {
         try {
             logger.info("Deleting report with ID: {}", id);

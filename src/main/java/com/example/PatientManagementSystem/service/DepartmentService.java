@@ -1,5 +1,6 @@
 package com.example.PatientManagementSystem.service;
 
+import com.example.PatientManagementSystem.exception.ApiRequestException;
 import com.example.PatientManagementSystem.exception.DataAccessException;
 import com.example.PatientManagementSystem.exception.ServiceException;
 import com.example.PatientManagementSystem.model.Department;
@@ -16,6 +17,10 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Service layer for managing departments.
+ * Provides business logic for saving, retrieving, updating, and deleting appointments.
+ */
 @Service
 public class DepartmentService {
 
@@ -24,6 +29,12 @@ public class DepartmentService {
     @Autowired
     private DepartmentDAO departmentDAO;
 
+    /**
+     * Saves a new department.
+     *
+     * @param department The department details to be saved.
+     * @throws ServiceException if there is an error during the save operation.
+     */
     public Department saveDepartment(Department department) {
         try {
             logger.info("Saving department: {}", department.getDepartmentName());
@@ -34,6 +45,12 @@ public class DepartmentService {
         }
     }
 
+    /**
+     * Retrieves a department by its ID.
+     *
+     * @param id The ID of the department to retrieve.
+     * @throws ServiceException if the department with the given ID is not found.
+     */
     public Department getDepartmentById(Long id) {
         try {
             logger.info("Retrieving department by ID: {}", id);
@@ -48,6 +65,15 @@ public class DepartmentService {
         }
     }
 
+    /**
+     * Retrieves a paginated list of departments with optional sorting and filtering.
+     *
+     * @param page   The page number to retrieve (default: 1).
+     * @param size   The number of records per page (default: 20).
+     * @param sort   The sort criteria in the format "field,order" (default: "departmentId,asc").
+     * @param search An optional search query to filter departments.
+     * @throws ServiceException if there is an error during the retrieval process.
+     */
     public Page<Department> getAllDepartments(int page, int size, String[] sort, String search) {
         try {
             logger.info("Fetching all departments");
@@ -76,6 +102,13 @@ public class DepartmentService {
         }
     }
 
+    /**
+     * Updates an existing department by its ID.
+     *
+     * @param id The ID of the department to update.
+     * @param updatedDepartment The updated department details.
+     * @throws ServiceException if there is an error during the update process.
+     */
     public Department updateDepartment(Long id, Department updatedDepartment) {
         try {
             logger.info("Updating department with ID: {}", id);
@@ -89,6 +122,12 @@ public class DepartmentService {
         }
     }
 
+    /**
+     * Deletes a department by its ID.
+     *
+     * @param id The ID of the department to delete.
+     * @throws ServiceException if there is an error during the delete operation.
+     */
     public void deleteDepartmentById(Long id) {
         try {
             logger.info("Deleting department with ID: {}", id);

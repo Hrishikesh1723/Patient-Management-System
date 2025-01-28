@@ -3,22 +3,29 @@ package com.example.PatientManagementSystem.model;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 
+/**
+ * Entity representing a Report.
+ */
 @Entity
 @Table(name = "reports")
+@Schema(description = "Represents a reports of a patient in the patient management system.")
 public class Report {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "report_id")
+    @Schema(description = "Unique identifier for the report.", example = "1")
     private Long reportId;
 
     @Column(name = "report_name")
+    @Schema(description = "Name of the Report.", example = "Blood Pressure Report")
     private String reportName;
 
     @Column(name = "Patient_id")
+    @Schema(description = "Unique identifier for the patient.", example = "21")
     private Long patientId;
 
     @ManyToOne
-    @Schema(hidden = true)
+    @Schema(hidden = true)// Hides this field from Swagger UI
     @JoinColumn(name = "patient_id", insertable = false, updatable = false, nullable = false)
     private Patient patient;
 

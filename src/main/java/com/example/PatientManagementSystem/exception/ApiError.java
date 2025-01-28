@@ -4,11 +4,15 @@ import org.springframework.http.HttpStatus;
 
 import java.time.LocalDateTime;
 
+/**
+ * Represents a structured error response for API errors.
+ */
 public class ApiError {
     private HttpStatus status;
     private String message;
     private LocalDateTime timestamp;
 
+    // Constructor with status and message
     public ApiError(HttpStatus status, String message) {
         this.status = status;
         this.message = message;

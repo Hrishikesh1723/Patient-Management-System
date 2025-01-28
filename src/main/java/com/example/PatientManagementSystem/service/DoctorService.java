@@ -1,5 +1,6 @@
 package com.example.PatientManagementSystem.service;
 
+import com.example.PatientManagementSystem.exception.ApiRequestException;
 import com.example.PatientManagementSystem.exception.DataAccessException;
 import com.example.PatientManagementSystem.exception.ServiceException;
 import com.example.PatientManagementSystem.model.Doctor;
@@ -16,6 +17,10 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Service layer for managing doctors.
+ * Provides business logic for saving, retrieving, updating, and deleting appointments.
+ */
 @Service
 public class DoctorService {
 
@@ -24,6 +29,12 @@ public class DoctorService {
     @Autowired
     private DoctorDAO doctorDAO;
 
+    /**
+     * Saves a new doctor.
+     *
+     * @param doctor The doctor details to be saved.
+     * @throws ServiceException if there is an error during the save operation.
+     */
     public Doctor saveDoctor(Doctor doctor) {
         try {
             logger.info("Saving doctor: {}", doctor.getDoctorName());
@@ -34,6 +45,12 @@ public class DoctorService {
         }
     }
 
+    /**
+     * Retrieves a doctor by their ID.
+     *
+     * @param id The ID of the doctor to retrieve.
+     * @throws ServiceException if the doctor with the given ID is not found.
+     */
     public Doctor getDoctorById(Long id) {
         try {
             logger.info("Retrieving doctor by ID: {}", id);
@@ -48,6 +65,15 @@ public class DoctorService {
         }
     }
 
+    /**
+     * Retrieves a paginated list of doctors with optional sorting and filtering.
+     *
+     * @param page   The page number to retrieve (default: 1).
+     * @param size   The number of records per page (default: 20).
+     * @param sort   The sort criteria in the format "field,order" (default: "doctorId,asc").
+     * @param search An optional search query to filter doctors.
+     * @throws ServiceException if there is an error during the retrieval process.
+     */
     public Page<Doctor> getAllDoctors(int page, int size, String[] sort, String search) {
         try {
             logger.info("Fetching all doctors");
@@ -76,6 +102,13 @@ public class DoctorService {
         }
     }
 
+    /**
+     * Updates an existing doctor by their ID.
+     *
+     * @param id The ID of the doctor to update.
+     * @param updatedDoctor  The updated doctor details.
+     * @throws ServiceException if there is an error during the update process.
+     */
     public Doctor updateDoctor(Long id, Doctor updatedDoctor) {
         try {
             logger.info("Updating doctor with ID: {}", id);
@@ -91,6 +124,12 @@ public class DoctorService {
         }
     }
 
+    /**
+     * Deletes a doctor by their ID.
+     *
+     * @param id The ID of the doctor to delete.
+     * @throws ServiceException if there is an error during the delete operation.
+     */
     public void deleteDoctorById(Long id) {
         try {
             logger.info("Deleting doctor with ID: {}", id);

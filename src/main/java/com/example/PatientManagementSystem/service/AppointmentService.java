@@ -16,6 +16,10 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Service layer for managing appointments.
+ * Provides business logic for saving, retrieving, updating, and deleting appointments.
+ */
 @Service
 public class AppointmentService {
 
@@ -24,6 +28,13 @@ public class AppointmentService {
     @Autowired
     private AppointmentDAO appointmentDAO;
 
+    /**
+     * Saves a new appointment.
+     *
+     * @param appointment The appointment details to be saved.
+     * @return The saved appointment.
+     * @throws ServiceException if there is an error during the save operation.
+     */
     public Appointment saveAppointment(Appointment appointment) {
         try {
             logger.info("Saving appointment for patient");
@@ -34,6 +45,13 @@ public class AppointmentService {
         }
     }
 
+    /**
+     * Retrieves an appointment by its ID.
+     *
+     * @param id The ID of the appointment to retrieve.
+     * @return The retrieved appointment.
+     * @throws ServiceException if the appointment is not found or there is a retrieval error.
+     */
     public Appointment getAppointmentById(Long id) {
         try {
             logger.info("Retrieving appointment by ID: {}", id);
@@ -48,6 +66,16 @@ public class AppointmentService {
         }
     }
 
+    /**
+     * Retrieves all appointments with pagination, sorting, and optional search.
+     *
+     * @param page   The page number to retrieve (default: 1).
+     * @param size   The number of records per page (default: 20).
+     * @param sort   The sort criteria in the format "field,order" (e.g., "appointmentDate,asc").
+     * @param search Optional search query to filter appointments by ID.
+     * @return A paginated list of appointments.
+     * @throws ServiceException if there is an error during the retrieval process.
+     */
     public Page<Appointment> getAllAppointments(int page, int size, String[] sort, String search) {
         try {
             logger.info("Fetching all appointments");
@@ -76,6 +104,14 @@ public class AppointmentService {
         }
     }
 
+    /**
+     * Updates an existing appointment by ID.
+     *
+     * @param id The ID of the appointment to update.
+     * @param updatedAppointment The updated appointment details.
+     * @return The updated appointment.
+     * @throws ServiceException if the appointment is not found or there is an update error.
+     */
     public Appointment updateAppointment(Long id, Appointment updatedAppointment) {
         try {
             logger.info("Updating appointment with ID: {}", id);
@@ -93,6 +129,12 @@ public class AppointmentService {
         }
     }
 
+    /**
+     * Deletes an appointment by its ID.
+     *
+     * @param id The ID of the appointment to delete.
+     * @throws ServiceException if the appointment is not found or there is a deletion error.
+     */
     public void deleteAppointmentById(Long id) {
         try {
             logger.info("Deleting appointment with ID: {}", id);

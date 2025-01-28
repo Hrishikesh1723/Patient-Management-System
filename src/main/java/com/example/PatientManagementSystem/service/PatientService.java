@@ -1,5 +1,6 @@
 package com.example.PatientManagementSystem.service;
 
+import com.example.PatientManagementSystem.exception.ApiRequestException;
 import com.example.PatientManagementSystem.exception.DataAccessException;
 import com.example.PatientManagementSystem.exception.ServiceException;
 import com.example.PatientManagementSystem.model.Patient;
@@ -17,6 +18,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Service layer for managing patients.
+ * Provides business logic for saving, retrieving, updating, and deleting appointments.
+ */
 @Service
 public class PatientService {
 
@@ -25,6 +30,12 @@ public class PatientService {
     @Autowired
     private PatientDAO patientDAO;
 
+    /**
+     * Saves a new patient.
+     *
+     * @param patient The patient details to be saved.
+     * @throws ServiceException if there is an error during the save operation.
+     */
     public Patient savePatient(Patient patient) {
         try {
             logger.info("Saving patient: {}", patient.getName());
@@ -35,6 +46,12 @@ public class PatientService {
         }
     }
 
+    /**
+     * Retrieves a patient by their ID.
+     *
+     * @param id The ID of the patient to retrieve.
+     * @throws ServiceException if the patient with the given ID is not found.
+     */
     public Patient getPatientById(Long id) {
         try {
             logger.info("Retrieving patient by ID: {}", id);
@@ -49,6 +66,15 @@ public class PatientService {
         }
     }
 
+    /**
+     * Retrieves a paginated list of patients with optional sorting and filtering.
+     *
+     * @param page   The page number to retrieve (default: 1).
+     * @param size   The number of records per page (default: 20).
+     * @param sort   The sort criteria in the format "field,order" (default: "patientId,asc").
+     * @param search An optional search query to filter patients.
+     * @throws ServiceException if there is an error during the retrieval process.
+     */
     public Page<Patient> getAllPatients(int page, int size, String[] sort, String search) {
         try {
             logger.info("Sort options received: {}", Arrays.toString(sort));
@@ -78,6 +104,13 @@ public class PatientService {
         }
     }
 
+    /**
+     * Updates an existing patient by their ID.
+     *
+     * @param id The ID of the patient to update.
+     * @param updatedPatient The updated patient details.
+     * @throws ServiceException if there is an error during the update process.
+     */
     public Patient updatePatient(Long id, Patient updatedPatient) {
         try {
             logger.info("Updating patient with ID: {}", id);
@@ -96,6 +129,12 @@ public class PatientService {
         }
     }
 
+    /**
+     * Deletes a patient by their ID.
+     *
+     * @param id The ID of the patient to delete.
+     * @throws ServiceException if there is an error during the delete operation.
+     */
     public void deletePatientById(Long id) {
         try {
             logger.info("Deleting patient with ID: {}", id);

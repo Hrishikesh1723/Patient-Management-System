@@ -4,31 +4,39 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
+/**
+ * Entity representing an Appointment.
+ */
 @Entity
 @Table(name = "appointments")
+@Schema(description = "Represents an appointment in the Patient Management System.")
 public class Appointment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "appointment_id")
+    @Schema(description = "Unique identifier for the appointment.", example = "1")
     private Long appointmentId;
 
     @Column(name = "patient_id")
+    @Schema(description = "ID of the patient associated with the appointment.", example = "41")
     private Long patientId;
 
     @Column(name = "doctor_id")
+    @Schema(description = "ID of the doctor associated with the appointment.", example = "22")
     private Long doctorId;
 
     @ManyToOne
-    @Schema(hidden = true)
+    @Schema(hidden = true)// Hides this field from Swagger UI
     @JoinColumn(name = "patient_id", insertable = false, updatable = false, nullable = false)
     private Patient patient;
 
     @ManyToOne
-    @Schema(hidden = true)
+    @Schema(hidden = true)// Hides this field from Swagger UI
     @JoinColumn(name = "doctor_id", insertable = false, updatable = false, nullable = false)
     private Doctor doctor;
 
     @Column(name = "appointment_date")
+    @Schema(description = "Date and time of the appointment.", example = "2025-02-01T10:30:00")
     private LocalDateTime appointmentDate;
 
     // Getters and setters

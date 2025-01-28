@@ -1,24 +1,24 @@
-2025-01-23T12:40:40.804+05:30  INFO 2470 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Starting PatientManagementSystemApplication using Java 23.0.1 with PID 2470 (/Users/hrishikeshrana/IdeaProjects/PatientManagementSystem/target/classes started by hrishikeshrana in /Users/hrishikeshrana/IdeaProjects/PatientManagementSystem)
-2025-01-23T12:40:40.809+05:30 DEBUG 2470 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Running with Spring Boot v3.4.0, Spring v6.2.0
-2025-01-23T12:40:40.810+05:30  INFO 2470 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
-2025-01-23T12:40:40.846+05:30  INFO 2470 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-01-23T12:40:40.846+05:30  INFO 2470 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-01-23T12:40:41.272+05:30  INFO 2470 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-23T12:40:41.303+05:30  INFO 2470 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 5 JPA repository interfaces.
-2025-01-23T12:40:41.604+05:30  INFO 2470 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-01-23T12:40:41.612+05:30  INFO 2470 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-23T12:40:41.612+05:30  INFO 2470 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2025-01-23T12:40:41.636+05:30  INFO 2470 --- [PatientManagementSystem] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-01-23T12:40:41.636+05:30  INFO 2470 --- [PatientManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 790 ms
-2025-01-23T12:40:41.718+05:30  INFO 2470 --- [PatientManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-23T12:40:41.748+05:30  INFO 2470 --- [PatientManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
-2025-01-23T12:40:41.763+05:30  INFO 2470 --- [PatientManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-23T12:40:41.907+05:30  INFO 2470 --- [PatientManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-23T12:40:41.922+05:30  INFO 2470 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-23T12:40:45.397+05:30  INFO 2470 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7de9f38c
-2025-01-23T12:40:45.399+05:30  INFO 2470 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-23T12:40:45.682+05:30  WARN 2470 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-01-23T12:40:46.223+05:30  INFO 2470 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-01-27T17:14:31.961+05:30  INFO 6869 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Starting PatientManagementSystemApplication using Java 23.0.1 with PID 6869 (/Users/hrishikeshrana/IdeaProjects/PatientManagementSystem/target/classes started by hrishikeshrana in /Users/hrishikeshrana/IdeaProjects/PatientManagementSystem)
+2025-01-27T17:14:31.967+05:30 DEBUG 6869 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-27T17:14:31.967+05:30  INFO 6869 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2025-01-27T17:14:32.003+05:30  INFO 6869 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-27T17:14:32.003+05:30  INFO 6869 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-27T17:14:32.419+05:30  INFO 6869 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-27T17:14:32.452+05:30  INFO 6869 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 5 JPA repository interfaces.
+2025-01-27T17:14:32.740+05:30  INFO 6869 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-01-27T17:14:32.748+05:30  INFO 6869 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-27T17:14:32.748+05:30  INFO 6869 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-01-27T17:14:32.773+05:30  INFO 6869 --- [PatientManagementSystem] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-27T17:14:32.773+05:30  INFO 6869 --- [PatientManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 769 ms
+2025-01-27T17:14:32.852+05:30  INFO 6869 --- [PatientManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-27T17:14:32.881+05:30  INFO 6869 --- [PatientManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-01-27T17:14:32.898+05:30  INFO 6869 --- [PatientManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-27T17:14:33.042+05:30  INFO 6869 --- [PatientManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-27T17:14:33.057+05:30  INFO 6869 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-27T17:14:36.174+05:30  INFO 6869 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6ea272b3
+2025-01-27T17:14:36.176+05:30  INFO 6869 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-27T17:14:36.461+05:30  WARN 6869 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-27T17:14:37.011+05:30  INFO 6869 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 16.6
@@ -26,43 +26,42 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-01-23T12:40:46.701+05:30  INFO 2470 --- [PatientManagementSystem] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-23T12:40:52.474+05:30  INFO 2470 --- [PatientManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T12:40:52.760+05:30  WARN 2470 --- [PatientManagementSystem] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-23T12:40:52.809+05:30  WARN 2470 --- [PatientManagementSystem] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.PatientManagementSystem.controller.DepartmentController.deleteDepartmentById(java.lang.Long), but only the first will be used: [@org.springframework.web.bind.annotation.PatchMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={}), @org.springframework.web.bind.annotation.DeleteMapping(consumes={}, headers={}, name="", params={}, path={"/{id}"}, produces={}, value={"/{id}"})]
-2025-01-23T12:40:52.976+05:30  INFO 2470 --- [PatientManagementSystem] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-01-23T12:40:52.995+05:30  INFO 2470 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-01-23T12:40:53.002+05:30  INFO 2470 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Started PatientManagementSystemApplication in 12.449 seconds (process running for 12.73)
-2025-01-23T12:41:21.438+05:30  INFO 2470 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-23T12:41:21.439+05:30  INFO 2470 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-01-23T12:41:21.440+05:30  INFO 2470 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-01-23T12:41:21.961+05:30  INFO 2470 --- [PatientManagementSystem] [http-nio-8081-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 391 ms
-2025-01-23T12:45:29.571+05:30  INFO 2470 --- [PatientManagementSystem] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-01-23T12:45:29.575+05:30  INFO 2470 --- [PatientManagementSystem] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-01-23T12:45:29.578+05:30  INFO 2470 --- [PatientManagementSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T12:45:29.581+05:30  INFO 2470 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-01-23T12:45:32.346+05:30  INFO 2470 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-01-23T12:45:34.247+05:30  INFO 2560 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Starting PatientManagementSystemApplication using Java 23.0.1 with PID 2560 (/Users/hrishikeshrana/IdeaProjects/PatientManagementSystem/target/classes started by hrishikeshrana in /Users/hrishikeshrana/IdeaProjects/PatientManagementSystem)
-2025-01-23T12:45:34.248+05:30 DEBUG 2560 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Running with Spring Boot v3.4.0, Spring v6.2.0
-2025-01-23T12:45:34.249+05:30  INFO 2560 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
-2025-01-23T12:45:34.285+05:30  INFO 2560 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-01-23T12:45:34.285+05:30  INFO 2560 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-01-23T12:45:34.707+05:30  INFO 2560 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-23T12:45:34.742+05:30  INFO 2560 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 5 JPA repository interfaces.
-2025-01-23T12:45:35.049+05:30  INFO 2560 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-01-23T12:45:35.057+05:30  INFO 2560 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-23T12:45:35.057+05:30  INFO 2560 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2025-01-23T12:45:35.076+05:30  INFO 2560 --- [PatientManagementSystem] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-01-23T12:45:35.076+05:30  INFO 2560 --- [PatientManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 791 ms
-2025-01-23T12:45:35.170+05:30  INFO 2560 --- [PatientManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-23T12:45:35.196+05:30  INFO 2560 --- [PatientManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
-2025-01-23T12:45:35.210+05:30  INFO 2560 --- [PatientManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-23T12:45:35.348+05:30  INFO 2560 --- [PatientManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-23T12:45:35.361+05:30  INFO 2560 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-23T12:45:38.205+05:30  INFO 2560 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@f950fb1
-2025-01-23T12:45:38.207+05:30  INFO 2560 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-23T12:45:38.484+05:30  WARN 2560 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-01-23T12:45:39.026+05:30  INFO 2560 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-01-27T17:14:37.483+05:30  INFO 6869 --- [PatientManagementSystem] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-27T17:14:43.239+05:30  INFO 6869 --- [PatientManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-27T17:14:43.544+05:30  WARN 6869 --- [PatientManagementSystem] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-27T17:14:43.804+05:30  INFO 6869 --- [PatientManagementSystem] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-27T17:14:43.826+05:30  INFO 6869 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-01-27T17:14:43.833+05:30  INFO 6869 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Started PatientManagementSystemApplication in 12.137 seconds (process running for 12.421)
+2025-01-27T17:15:00.318+05:30  INFO 6869 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27T17:15:00.319+05:30  INFO 6869 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-27T17:15:00.320+05:30  INFO 6869 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-01-27T17:15:00.771+05:30  INFO 6869 --- [PatientManagementSystem] [http-nio-8081-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 318 ms
+2025-01-27T17:24:27.886+05:30  INFO 6869 --- [PatientManagementSystem] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27T17:24:27.891+05:30  INFO 6869 --- [PatientManagementSystem] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-01-27T17:24:27.895+05:30  INFO 6869 --- [PatientManagementSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-27T17:24:27.897+05:30  INFO 6869 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-27T17:24:30.481+05:30  INFO 6869 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-27T17:24:32.185+05:30  INFO 7031 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Starting PatientManagementSystemApplication using Java 23.0.1 with PID 7031 (/Users/hrishikeshrana/IdeaProjects/PatientManagementSystem/target/classes started by hrishikeshrana in /Users/hrishikeshrana/IdeaProjects/PatientManagementSystem)
+2025-01-27T17:24:32.185+05:30 DEBUG 7031 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-27T17:24:32.186+05:30  INFO 7031 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2025-01-27T17:24:32.219+05:30  INFO 7031 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-27T17:24:32.219+05:30  INFO 7031 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-27T17:24:32.625+05:30  INFO 7031 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-27T17:24:32.657+05:30  INFO 7031 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 5 JPA repository interfaces.
+2025-01-27T17:24:32.936+05:30  INFO 7031 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-01-27T17:24:32.943+05:30  INFO 7031 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-27T17:24:32.944+05:30  INFO 7031 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-01-27T17:24:32.963+05:30  INFO 7031 --- [PatientManagementSystem] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-27T17:24:32.963+05:30  INFO 7031 --- [PatientManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 744 ms
+2025-01-27T17:24:33.045+05:30  INFO 7031 --- [PatientManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-27T17:24:33.070+05:30  INFO 7031 --- [PatientManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-01-27T17:24:33.084+05:30  INFO 7031 --- [PatientManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-27T17:24:33.217+05:30  INFO 7031 --- [PatientManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-27T17:24:33.230+05:30  INFO 7031 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-27T17:24:36.890+05:30  INFO 7031 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@19aab675
+2025-01-27T17:24:36.892+05:30  INFO 7031 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-27T17:24:37.189+05:30  WARN 7031 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-27T17:24:37.748+05:30  INFO 7031 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 16.6
@@ -70,87 +69,42 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-01-23T12:45:39.488+05:30  INFO 2560 --- [PatientManagementSystem] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-23T12:45:44.988+05:30  INFO 2560 --- [PatientManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T12:45:45.284+05:30  WARN 2560 --- [PatientManagementSystem] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-23T12:45:45.331+05:30  WARN 2560 --- [PatientManagementSystem] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.PatientManagementSystem.controller.DepartmentController.deleteDepartmentById(java.lang.Long), but only the first will be used: [@org.springframework.web.bind.annotation.PatchMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={}), @org.springframework.web.bind.annotation.DeleteMapping(consumes={}, headers={}, name="", params={}, path={"/{id}"}, produces={}, value={"/{id}"})]
-2025-01-23T12:45:45.490+05:30  INFO 2560 --- [PatientManagementSystem] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-01-23T12:45:45.509+05:30  INFO 2560 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-01-23T12:45:45.515+05:30  INFO 2560 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Started PatientManagementSystemApplication in 11.512 seconds (process running for 11.778)
-2025-01-23T12:45:46.300+05:30  INFO 2560 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-23T12:45:46.301+05:30  INFO 2560 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-01-23T12:45:46.302+05:30  INFO 2560 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-01-23T12:45:46.725+05:30  INFO 2560 --- [PatientManagementSystem] [http-nio-8081-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 314 ms
-2025-01-23T12:46:26.261+05:30  INFO 2560 --- [PatientManagementSystem] [http-nio-8081-exec-5] c.e.P.controller.AppointmentController   : Retrieving appointment with ID: 25
-2025-01-23T12:46:26.261+05:30  INFO 2560 --- [PatientManagementSystem] [http-nio-8081-exec-5] c.e.P.service.AppointmentService         : Retrieving appointment by ID: 25
-2025-01-23T12:46:26.266+05:30  INFO 2560 --- [PatientManagementSystem] [http-nio-8081-exec-5] c.e.P.dao.AppointmentDAO                 : Querying appointment by ID: 25
-2025-01-23T12:46:26.541+05:30 DEBUG 2560 --- [PatientManagementSystem] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
-    select
-        a1_0.appointment_id,
-        a1_0.appointment_date,
-        a1_0.doctor_id,
-        d1_0.doctor_id,
-        d1_0.department_id,
-        d2_0.department_id,
-        d2_0.department_name,
-        d1_0.doctor_name,
-        a1_0.patient_id,
-        p1_0.patient_id,
-        p1_0.admit_date,
-        p1_0.doctor_id,
-        d3_0.doctor_id,
-        d3_0.department_id,
-        d4_0.department_id,
-        d4_0.department_name,
-        d3_0.doctor_name,
-        p1_0.email,
-        p1_0.name,
-        p1_0.phone 
-    from
-        appointments a1_0 
-    join
-        doctors d1_0 
-            on d1_0.doctor_id=a1_0.doctor_id 
-    join
-        departments d2_0 
-            on d2_0.department_id=d1_0.department_id 
-    join
-        patients p1_0 
-            on p1_0.patient_id=a1_0.patient_id 
-    join
-        doctors d3_0 
-            on d3_0.doctor_id=p1_0.doctor_id 
-    join
-        departments d4_0 
-            on d4_0.department_id=d3_0.department_id 
-    where
-        a1_0.appointment_id=?
-2025-01-23T13:00:24.536+05:30  INFO 2560 --- [PatientManagementSystem] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-01-23T13:00:24.541+05:30  INFO 2560 --- [PatientManagementSystem] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-01-23T13:00:24.544+05:30  INFO 2560 --- [PatientManagementSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T13:00:24.546+05:30  INFO 2560 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-01-23T13:00:27.233+05:30  INFO 2560 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-01-23T13:00:29.100+05:30  INFO 2740 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Starting PatientManagementSystemApplication using Java 23.0.1 with PID 2740 (/Users/hrishikeshrana/IdeaProjects/PatientManagementSystem/target/classes started by hrishikeshrana in /Users/hrishikeshrana/IdeaProjects/PatientManagementSystem)
-2025-01-23T13:00:29.102+05:30 DEBUG 2740 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Running with Spring Boot v3.4.0, Spring v6.2.0
-2025-01-23T13:00:29.102+05:30  INFO 2740 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
-2025-01-23T13:00:29.130+05:30  INFO 2740 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-01-23T13:00:29.130+05:30  INFO 2740 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-01-23T13:00:29.559+05:30  INFO 2740 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-23T13:00:29.595+05:30  INFO 2740 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 5 JPA repository interfaces.
-2025-01-23T13:00:29.896+05:30  INFO 2740 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-01-23T13:00:29.903+05:30  INFO 2740 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-23T13:00:29.903+05:30  INFO 2740 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2025-01-23T13:00:29.926+05:30  INFO 2740 --- [PatientManagementSystem] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-01-23T13:00:29.927+05:30  INFO 2740 --- [PatientManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 796 ms
-2025-01-23T13:00:30.007+05:30  INFO 2740 --- [PatientManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-23T13:00:30.033+05:30  INFO 2740 --- [PatientManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
-2025-01-23T13:00:30.049+05:30  INFO 2740 --- [PatientManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-23T13:00:30.190+05:30  INFO 2740 --- [PatientManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-23T13:00:30.204+05:30  INFO 2740 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-23T13:00:33.773+05:30  INFO 2740 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1beddcdc
-2025-01-23T13:00:33.775+05:30  INFO 2740 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-23T13:00:34.056+05:30  WARN 2740 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-01-23T13:00:34.719+05:30  INFO 2740 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-01-27T17:24:38.211+05:30  INFO 7031 --- [PatientManagementSystem] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-27T17:24:45.500+05:30  INFO 7031 --- [PatientManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-27T17:24:45.765+05:30  WARN 7031 --- [PatientManagementSystem] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-27T17:24:45.999+05:30  INFO 7031 --- [PatientManagementSystem] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-27T17:24:46.020+05:30  INFO 7031 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-01-27T17:24:46.029+05:30  INFO 7031 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Started PatientManagementSystemApplication in 14.126 seconds (process running for 14.409)
+2025-01-27T17:24:51.801+05:30  INFO 7031 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27T17:24:51.801+05:30  INFO 7031 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-27T17:24:51.802+05:30  INFO 7031 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-01-27T17:24:52.271+05:30  INFO 7031 --- [PatientManagementSystem] [http-nio-8081-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 320 ms
+2025-01-27T17:28:36.627+05:30  INFO 7031 --- [PatientManagementSystem] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27T17:28:36.632+05:30  INFO 7031 --- [PatientManagementSystem] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-01-27T17:28:36.635+05:30  INFO 7031 --- [PatientManagementSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-27T17:28:36.639+05:30  INFO 7031 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-27T17:28:39.151+05:30  INFO 7031 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-27T17:28:40.893+05:30  INFO 7099 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Starting PatientManagementSystemApplication using Java 23.0.1 with PID 7099 (/Users/hrishikeshrana/IdeaProjects/PatientManagementSystem/target/classes started by hrishikeshrana in /Users/hrishikeshrana/IdeaProjects/PatientManagementSystem)
+2025-01-27T17:28:40.894+05:30 DEBUG 7099 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-27T17:28:40.894+05:30  INFO 7099 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2025-01-27T17:28:40.929+05:30  INFO 7099 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-27T17:28:40.929+05:30  INFO 7099 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-27T17:28:41.350+05:30  INFO 7099 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-27T17:28:41.385+05:30  INFO 7099 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 5 JPA repository interfaces.
+2025-01-27T17:28:41.697+05:30  INFO 7099 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-01-27T17:28:41.705+05:30  INFO 7099 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-27T17:28:41.705+05:30  INFO 7099 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-01-27T17:28:41.731+05:30  INFO 7099 --- [PatientManagementSystem] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-27T17:28:41.731+05:30  INFO 7099 --- [PatientManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 801 ms
+2025-01-27T17:28:41.804+05:30  INFO 7099 --- [PatientManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-27T17:28:41.834+05:30  INFO 7099 --- [PatientManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-01-27T17:28:41.849+05:30  INFO 7099 --- [PatientManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-27T17:28:41.986+05:30  INFO 7099 --- [PatientManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-27T17:28:41.999+05:30  INFO 7099 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-27T17:28:44.673+05:30  INFO 7099 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@45d867ec
+2025-01-27T17:28:44.675+05:30  INFO 7099 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-27T17:28:45.065+05:30  WARN 7099 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-27T17:28:45.589+05:30  INFO 7099 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 16.6
@@ -158,49 +112,45 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-01-23T13:00:35.192+05:30  INFO 2740 --- [PatientManagementSystem] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-23T13:00:41.309+05:30  INFO 2740 --- [PatientManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T13:00:41.576+05:30  WARN 2740 --- [PatientManagementSystem] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-23T13:00:41.625+05:30  WARN 2740 --- [PatientManagementSystem] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.PatientManagementSystem.controller.DepartmentController.deleteDepartmentById(java.lang.Long), but only the first will be used: [@org.springframework.web.bind.annotation.PatchMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={}), @org.springframework.web.bind.annotation.DeleteMapping(consumes={}, headers={}, name="", params={}, path={"/{id}"}, produces={}, value={"/{id}"})]
-2025-01-23T13:00:41.808+05:30  INFO 2740 --- [PatientManagementSystem] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-01-23T13:00:41.830+05:30  INFO 2740 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-01-23T13:00:41.840+05:30  INFO 2740 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Started PatientManagementSystemApplication in 12.983 seconds (process running for 13.241)
-2025-01-23T13:00:45.318+05:30  INFO 2740 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-23T13:00:45.318+05:30  INFO 2740 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-01-23T13:00:45.319+05:30  INFO 2740 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-01-23T13:00:45.838+05:30  INFO 2740 --- [PatientManagementSystem] [http-nio-8081-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 383 ms
-2025-01-23T13:04:43.878+05:30  WARN 2740 --- [PatientManagementSystem] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m9s969ms).
-2025-01-23T13:20:21.624+05:30  WARN 2740 --- [PatientManagementSystem] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m37s747ms).
-2025-01-23T13:25:28.137+05:30  WARN 2740 --- [PatientManagementSystem] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m6s499ms).
-2025-01-23T13:46:05.387+05:30  WARN 2740 --- [PatientManagementSystem] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m37s251ms).
-2025-01-23T14:06:41.682+05:30  WARN 2740 --- [PatientManagementSystem] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m36s295ms).
-2025-01-23T14:06:45.217+05:30  INFO 2740 --- [PatientManagementSystem] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-01-23T14:06:45.222+05:30  INFO 2740 --- [PatientManagementSystem] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-01-23T14:06:45.225+05:30  INFO 2740 --- [PatientManagementSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T14:06:45.228+05:30  INFO 2740 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-01-23T14:06:55.241+05:30  WARN 2740 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.pool.HikariPool        : Timed-out waiting for close connection executor to shutdown
-2025-01-23T14:06:55.242+05:30  INFO 2740 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-01-23T14:40:52.987+05:30  INFO 3174 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Starting PatientManagementSystemApplication using Java 23.0.1 with PID 3174 (/Users/hrishikeshrana/IdeaProjects/PatientManagementSystem/target/classes started by hrishikeshrana in /Users/hrishikeshrana/IdeaProjects/PatientManagementSystem)
-2025-01-23T14:40:52.988+05:30 DEBUG 3174 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Running with Spring Boot v3.4.0, Spring v6.2.0
-2025-01-23T14:40:52.988+05:30  INFO 3174 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
-2025-01-23T14:40:53.017+05:30  INFO 3174 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-01-23T14:40:53.017+05:30  INFO 3174 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-01-23T14:40:53.443+05:30  INFO 3174 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-23T14:40:53.478+05:30  INFO 3174 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 5 JPA repository interfaces.
-2025-01-23T14:40:53.762+05:30  INFO 3174 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-01-23T14:40:53.770+05:30  INFO 3174 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-23T14:40:53.770+05:30  INFO 3174 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2025-01-23T14:40:53.791+05:30  INFO 3174 --- [PatientManagementSystem] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-01-23T14:40:53.792+05:30  INFO 3174 --- [PatientManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 775 ms
-2025-01-23T14:40:53.874+05:30  INFO 3174 --- [PatientManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-23T14:40:53.899+05:30  INFO 3174 --- [PatientManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
-2025-01-23T14:40:53.913+05:30  INFO 3174 --- [PatientManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-23T14:40:54.046+05:30  INFO 3174 --- [PatientManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-23T14:40:54.059+05:30  INFO 3174 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-23T14:40:57.576+05:30  INFO 3174 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@35683c66
-2025-01-23T14:40:57.578+05:30  INFO 3174 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-23T14:40:57.886+05:30  WARN 3174 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-01-23T14:40:58.450+05:30  INFO 3174 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-01-27T17:28:46.037+05:30  INFO 7099 --- [PatientManagementSystem] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-27T17:28:51.596+05:30  INFO 7099 --- [PatientManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-27T17:28:51.842+05:30  WARN 7099 --- [PatientManagementSystem] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-27T17:28:52.058+05:30  INFO 7099 --- [PatientManagementSystem] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-27T17:28:52.078+05:30  INFO 7099 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-01-27T17:28:52.084+05:30  INFO 7099 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Started PatientManagementSystemApplication in 11.43 seconds (process running for 11.694)
+2025-01-27T17:29:05.199+05:30  INFO 7099 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27T17:29:05.199+05:30  INFO 7099 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-27T17:29:05.200+05:30  INFO 7099 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-01-27T17:29:05.616+05:30  INFO 7099 --- [PatientManagementSystem] [http-nio-8081-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 301 ms
+2025-01-27T17:50:08.086+05:30  WARN 7099 --- [PatientManagementSystem] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m53s285ms).
+2025-01-27T17:59:58.879+05:30  WARN 7099 --- [PatientManagementSystem] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m50s794ms).
+2025-01-27T18:15:12.656+05:30  INFO 7099 --- [PatientManagementSystem] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27T18:15:12.661+05:30  INFO 7099 --- [PatientManagementSystem] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-01-27T18:15:12.665+05:30  INFO 7099 --- [PatientManagementSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-27T18:15:12.668+05:30  INFO 7099 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-27T18:15:22.675+05:30  WARN 7099 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.pool.HikariPool        : Timed-out waiting for close connection executor to shutdown
+2025-01-27T18:15:22.678+05:30  INFO 7099 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-27T18:42:36.165+05:30  INFO 7915 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Starting PatientManagementSystemApplication using Java 23.0.1 with PID 7915 (/Users/hrishikeshrana/IdeaProjects/PatientManagementSystem/target/classes started by hrishikeshrana in /Users/hrishikeshrana/IdeaProjects/PatientManagementSystem)
+2025-01-27T18:42:36.166+05:30 DEBUG 7915 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-27T18:42:36.167+05:30  INFO 7915 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2025-01-27T18:42:36.201+05:30  INFO 7915 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-27T18:42:36.202+05:30  INFO 7915 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-27T18:42:36.616+05:30  INFO 7915 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-27T18:42:36.647+05:30  INFO 7915 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 5 JPA repository interfaces.
+2025-01-27T18:42:36.930+05:30  INFO 7915 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-01-27T18:42:36.938+05:30  INFO 7915 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-27T18:42:36.938+05:30  INFO 7915 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-01-27T18:42:36.957+05:30  INFO 7915 --- [PatientManagementSystem] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-27T18:42:36.958+05:30  INFO 7915 --- [PatientManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 756 ms
+2025-01-27T18:42:37.039+05:30  INFO 7915 --- [PatientManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-27T18:42:37.065+05:30  INFO 7915 --- [PatientManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-01-27T18:42:37.080+05:30  INFO 7915 --- [PatientManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-27T18:42:37.216+05:30  INFO 7915 --- [PatientManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-27T18:42:37.229+05:30  INFO 7915 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-27T18:42:40.093+05:30  INFO 7915 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2fc8c840
+2025-01-27T18:42:40.095+05:30  INFO 7915 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-27T18:42:40.369+05:30  WARN 7915 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-27T18:42:40.903+05:30  INFO 7915 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 16.6
@@ -208,69 +158,42 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-01-23T14:40:58.919+05:30  INFO 3174 --- [PatientManagementSystem] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-23T14:41:05.153+05:30  INFO 3174 --- [PatientManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T14:41:05.417+05:30  WARN 3174 --- [PatientManagementSystem] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-23T14:41:05.466+05:30  WARN 3174 --- [PatientManagementSystem] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.PatientManagementSystem.controller.DepartmentController.deleteDepartmentById(java.lang.Long), but only the first will be used: [@org.springframework.web.bind.annotation.PatchMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={}), @org.springframework.web.bind.annotation.DeleteMapping(consumes={}, headers={}, name="", params={}, path={"/{id}"}, produces={}, value={"/{id}"})]
-2025-01-23T14:41:05.665+05:30  INFO 3174 --- [PatientManagementSystem] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-01-23T14:41:05.684+05:30  INFO 3174 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-01-23T14:41:05.691+05:30  INFO 3174 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Started PatientManagementSystemApplication in 12.95 seconds (process running for 13.212)
-2025-01-23T14:41:11.178+05:30  INFO 3174 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-23T14:41:11.178+05:30  INFO 3174 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-01-23T14:41:11.179+05:30  INFO 3174 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-01-23T14:41:11.627+05:30  INFO 3174 --- [PatientManagementSystem] [http-nio-8081-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 314 ms
-2025-01-23T14:41:56.009+05:30  INFO 3174 --- [PatientManagementSystem] [http-nio-8081-exec-7] c.e.P.controller.PatientController       : Fetching patient with ID: 4
-2025-01-23T14:41:56.010+05:30  INFO 3174 --- [PatientManagementSystem] [http-nio-8081-exec-7] c.e.P.service.PatientService             : Retrieving patient by ID: 4
-2025-01-23T14:41:56.016+05:30  INFO 3174 --- [PatientManagementSystem] [http-nio-8081-exec-7] c.e.P.dao.PatientDAO                     : Querying patient by ID: 4
-2025-01-23T14:41:56.326+05:30 DEBUG 3174 --- [PatientManagementSystem] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
-    select
-        p1_0.patient_id,
-        p1_0.admit_date,
-        p1_0.doctor_id,
-        d1_0.doctor_id,
-        d1_0.department_id,
-        d2_0.department_id,
-        d2_0.department_name,
-        d1_0.doctor_name,
-        p1_0.email,
-        p1_0.name,
-        p1_0.phone 
-    from
-        patients p1_0 
-    join
-        doctors d1_0 
-            on d1_0.doctor_id=p1_0.doctor_id 
-    join
-        departments d2_0 
-            on d2_0.department_id=d1_0.department_id 
-    where
-        p1_0.patient_id=?
-2025-01-23T14:47:24.617+05:30  INFO 3174 --- [PatientManagementSystem] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-01-23T14:47:24.621+05:30  INFO 3174 --- [PatientManagementSystem] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-01-23T14:47:24.624+05:30  INFO 3174 --- [PatientManagementSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T14:47:24.626+05:30  INFO 3174 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-01-23T14:47:27.258+05:30  INFO 3174 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-01-23T14:47:29.056+05:30  INFO 3323 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Starting PatientManagementSystemApplication using Java 23.0.1 with PID 3323 (/Users/hrishikeshrana/IdeaProjects/PatientManagementSystem/target/classes started by hrishikeshrana in /Users/hrishikeshrana/IdeaProjects/PatientManagementSystem)
-2025-01-23T14:47:29.056+05:30 DEBUG 3323 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Running with Spring Boot v3.4.0, Spring v6.2.0
-2025-01-23T14:47:29.057+05:30  INFO 3323 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
-2025-01-23T14:47:29.090+05:30  INFO 3323 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-01-23T14:47:29.091+05:30  INFO 3323 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-01-23T14:47:29.511+05:30  INFO 3323 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-23T14:47:29.545+05:30  INFO 3323 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 5 JPA repository interfaces.
-2025-01-23T14:47:29.841+05:30  INFO 3323 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-01-23T14:47:29.850+05:30  INFO 3323 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-23T14:47:29.850+05:30  INFO 3323 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2025-01-23T14:47:29.870+05:30  INFO 3323 --- [PatientManagementSystem] [restartedMain] o.a.c.c.C.[.[localhost].[/apidoc]        : Initializing Spring embedded WebApplicationContext
-2025-01-23T14:47:29.871+05:30  INFO 3323 --- [PatientManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 780 ms
-2025-01-23T14:47:29.957+05:30  INFO 3323 --- [PatientManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-23T14:47:29.985+05:30  INFO 3323 --- [PatientManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
-2025-01-23T14:47:29.999+05:30  INFO 3323 --- [PatientManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-23T14:47:30.136+05:30  INFO 3323 --- [PatientManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-23T14:47:30.149+05:30  INFO 3323 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-23T14:47:33.570+05:30  INFO 3323 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5e4b15ff
-2025-01-23T14:47:33.572+05:30  INFO 3323 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-23T14:47:33.868+05:30  WARN 3323 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-01-23T14:47:34.398+05:30  INFO 3323 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-01-27T18:42:41.382+05:30  INFO 7915 --- [PatientManagementSystem] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-27T18:42:46.827+05:30  INFO 7915 --- [PatientManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-27T18:42:47.096+05:30  WARN 7915 --- [PatientManagementSystem] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-27T18:42:47.315+05:30  INFO 7915 --- [PatientManagementSystem] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-27T18:42:47.335+05:30  INFO 7915 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-01-27T18:42:47.342+05:30  INFO 7915 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Started PatientManagementSystemApplication in 11.429 seconds (process running for 11.688)
+2025-01-27T18:42:50.586+05:30  INFO 7915 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27T18:42:50.586+05:30  INFO 7915 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-27T18:42:50.587+05:30  INFO 7915 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-01-27T18:42:51.043+05:30  INFO 7915 --- [PatientManagementSystem] [http-nio-8081-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 307 ms
+2025-01-27T18:48:46.560+05:30  INFO 7915 --- [PatientManagementSystem] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27T18:48:46.565+05:30  INFO 7915 --- [PatientManagementSystem] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-01-27T18:48:46.568+05:30  INFO 7915 --- [PatientManagementSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-27T18:48:46.570+05:30  INFO 7915 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-27T18:48:49.322+05:30  INFO 7915 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-27T18:50:05.534+05:30  INFO 8075 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Starting PatientManagementSystemApplication using Java 23.0.1 with PID 8075 (/Users/hrishikeshrana/IdeaProjects/PatientManagementSystem/target/classes started by hrishikeshrana in /Users/hrishikeshrana/IdeaProjects/PatientManagementSystem)
+2025-01-27T18:50:05.534+05:30 DEBUG 8075 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-27T18:50:05.535+05:30  INFO 8075 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2025-01-27T18:50:05.568+05:30  INFO 8075 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-27T18:50:05.568+05:30  INFO 8075 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-27T18:50:05.973+05:30  INFO 8075 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-27T18:50:06.003+05:30  INFO 8075 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 5 JPA repository interfaces.
+2025-01-27T18:50:06.282+05:30  INFO 8075 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-01-27T18:50:06.290+05:30  INFO 8075 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-27T18:50:06.290+05:30  INFO 8075 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-01-27T18:50:06.308+05:30  INFO 8075 --- [PatientManagementSystem] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-27T18:50:06.309+05:30  INFO 8075 --- [PatientManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 740 ms
+2025-01-27T18:50:06.386+05:30  INFO 8075 --- [PatientManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-27T18:50:06.412+05:30  INFO 8075 --- [PatientManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-01-27T18:50:06.425+05:30  INFO 8075 --- [PatientManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-27T18:50:06.550+05:30  INFO 8075 --- [PatientManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-27T18:50:06.564+05:30  INFO 8075 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-27T18:50:09.580+05:30  INFO 8075 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@41929cf1
+2025-01-27T18:50:09.584+05:30  INFO 8075 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-27T18:50:09.861+05:30  WARN 8075 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-27T18:50:10.428+05:30  INFO 8075 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 16.6
@@ -278,44 +201,42 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-01-23T14:47:34.938+05:30  INFO 3323 --- [PatientManagementSystem] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-23T14:47:41.036+05:30  INFO 3323 --- [PatientManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T14:47:41.294+05:30  WARN 3323 --- [PatientManagementSystem] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-23T14:47:41.349+05:30  WARN 3323 --- [PatientManagementSystem] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.PatientManagementSystem.controller.DepartmentController.deleteDepartmentById(java.lang.Long), but only the first will be used: [@org.springframework.web.bind.annotation.PatchMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={}), @org.springframework.web.bind.annotation.DeleteMapping(consumes={}, headers={}, name="", params={}, path={"/{id}"}, produces={}, value={"/{id}"})]
-2025-01-23T14:47:41.527+05:30  INFO 3323 --- [PatientManagementSystem] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-01-23T14:47:41.545+05:30  INFO 3323 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/apidoc'
-2025-01-23T14:47:41.552+05:30  INFO 3323 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Started PatientManagementSystemApplication in 12.736 seconds (process running for 13.005)
-2025-01-23T14:47:53.605+05:30  INFO 3323 --- [PatientManagementSystem] [http-nio-8081-exec-4] o.a.c.c.C.[.[localhost].[/apidoc]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-23T14:47:53.606+05:30  INFO 3323 --- [PatientManagementSystem] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-01-23T14:47:53.610+05:30  INFO 3323 --- [PatientManagementSystem] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2025-01-23T14:47:53.635+05:30 ERROR 3323 --- [PatientManagementSystem] [http-nio-8081-exec-4] c.e.P.exception.GlobalExceptionHandler   : Unhandled Exception: No static resource .
-2025-01-23T14:47:53.672+05:30  WARN 3323 --- [PatientManagementSystem] [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .]
-2025-01-23T14:49:16.155+05:30  INFO 3323 --- [PatientManagementSystem] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-01-23T14:49:16.161+05:30  INFO 3323 --- [PatientManagementSystem] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-01-23T14:49:16.164+05:30  INFO 3323 --- [PatientManagementSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T14:49:16.167+05:30  INFO 3323 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-01-23T14:49:19.069+05:30  INFO 3323 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-01-23T14:49:20.319+05:30  INFO 3421 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Starting PatientManagementSystemApplication using Java 23.0.1 with PID 3421 (/Users/hrishikeshrana/IdeaProjects/PatientManagementSystem/target/classes started by hrishikeshrana in /Users/hrishikeshrana/IdeaProjects/PatientManagementSystem)
-2025-01-23T14:49:20.319+05:30 DEBUG 3421 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Running with Spring Boot v3.4.0, Spring v6.2.0
-2025-01-23T14:49:20.320+05:30  INFO 3421 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
-2025-01-23T14:49:20.354+05:30  INFO 3421 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-01-23T14:49:20.354+05:30  INFO 3421 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-01-23T14:49:20.795+05:30  INFO 3421 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-23T14:49:20.832+05:30  INFO 3421 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 5 JPA repository interfaces.
-2025-01-23T14:49:21.146+05:30  INFO 3421 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-01-23T14:49:21.153+05:30  INFO 3421 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-23T14:49:21.154+05:30  INFO 3421 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2025-01-23T14:49:21.186+05:30  INFO 3421 --- [PatientManagementSystem] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-01-23T14:49:21.187+05:30  INFO 3421 --- [PatientManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 833 ms
-2025-01-23T14:49:21.264+05:30  INFO 3421 --- [PatientManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-23T14:49:21.291+05:30  INFO 3421 --- [PatientManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
-2025-01-23T14:49:21.305+05:30  INFO 3421 --- [PatientManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-23T14:49:21.444+05:30  INFO 3421 --- [PatientManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-23T14:49:21.457+05:30  INFO 3421 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-23T14:49:24.599+05:30  INFO 3421 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@28eea60d
-2025-01-23T14:49:24.602+05:30  INFO 3421 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-23T14:49:24.921+05:30  WARN 3421 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-01-23T14:49:25.517+05:30  INFO 3421 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-01-27T18:50:10.897+05:30  INFO 8075 --- [PatientManagementSystem] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-27T18:50:16.849+05:30  INFO 8075 --- [PatientManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-27T18:50:17.097+05:30  WARN 8075 --- [PatientManagementSystem] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-27T18:50:17.325+05:30  INFO 8075 --- [PatientManagementSystem] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-27T18:50:17.347+05:30  INFO 8075 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-01-27T18:50:17.356+05:30  INFO 8075 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Started PatientManagementSystemApplication in 12.073 seconds (process running for 12.322)
+2025-01-27T18:50:26.665+05:30  INFO 8075 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27T18:50:26.666+05:30  INFO 8075 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-27T18:50:26.667+05:30  INFO 8075 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-01-27T18:50:27.133+05:30  INFO 8075 --- [PatientManagementSystem] [http-nio-8081-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 315 ms
+2025-01-27T18:53:25.115+05:30  INFO 8075 --- [PatientManagementSystem] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27T18:53:25.119+05:30  INFO 8075 --- [PatientManagementSystem] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-01-27T18:53:25.122+05:30  INFO 8075 --- [PatientManagementSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-27T18:53:25.124+05:30  INFO 8075 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-27T18:53:27.528+05:30  INFO 8075 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-27T18:53:29.509+05:30  INFO 8130 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Starting PatientManagementSystemApplication using Java 23.0.1 with PID 8130 (/Users/hrishikeshrana/IdeaProjects/PatientManagementSystem/target/classes started by hrishikeshrana in /Users/hrishikeshrana/IdeaProjects/PatientManagementSystem)
+2025-01-27T18:53:29.509+05:30 DEBUG 8130 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-27T18:53:29.510+05:30  INFO 8130 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2025-01-27T18:53:29.545+05:30  INFO 8130 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-27T18:53:29.545+05:30  INFO 8130 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-27T18:53:29.997+05:30  INFO 8130 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-27T18:53:30.031+05:30  INFO 8130 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 5 JPA repository interfaces.
+2025-01-27T18:53:30.333+05:30  INFO 8130 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-01-27T18:53:30.342+05:30  INFO 8130 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-27T18:53:30.343+05:30  INFO 8130 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-01-27T18:53:30.367+05:30  INFO 8130 --- [PatientManagementSystem] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-27T18:53:30.367+05:30  INFO 8130 --- [PatientManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 822 ms
+2025-01-27T18:53:30.443+05:30  INFO 8130 --- [PatientManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-27T18:53:30.471+05:30  INFO 8130 --- [PatientManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-01-27T18:53:30.485+05:30  INFO 8130 --- [PatientManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-27T18:53:30.621+05:30  INFO 8130 --- [PatientManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-27T18:53:30.635+05:30  INFO 8130 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-27T18:53:33.383+05:30  INFO 8130 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2bfe5c9f
+2025-01-27T18:53:33.385+05:30  INFO 8130 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-27T18:53:33.681+05:30  WARN 8130 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-27T18:53:34.223+05:30  INFO 8130 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 16.6
@@ -323,451 +244,18 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-01-23T14:49:25.971+05:30  INFO 3421 --- [PatientManagementSystem] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-23T14:49:32.387+05:30  INFO 3421 --- [PatientManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T14:49:32.643+05:30  WARN 3421 --- [PatientManagementSystem] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-23T14:49:32.690+05:30  WARN 3421 --- [PatientManagementSystem] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.PatientManagementSystem.controller.DepartmentController.deleteDepartmentById(java.lang.Long), but only the first will be used: [@org.springframework.web.bind.annotation.PatchMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={}), @org.springframework.web.bind.annotation.DeleteMapping(consumes={}, headers={}, name="", params={}, path={"/{id}"}, produces={}, value={"/{id}"})]
-2025-01-23T14:49:32.875+05:30  INFO 3421 --- [PatientManagementSystem] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-01-23T14:49:32.898+05:30  INFO 3421 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-01-23T14:49:32.904+05:30  INFO 3421 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Started PatientManagementSystemApplication in 12.845 seconds (process running for 13.124)
-2025-01-23T14:49:56.370+05:30  INFO 3421 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-23T14:49:56.371+05:30  INFO 3421 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-01-23T14:49:56.372+05:30  INFO 3421 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-01-23T14:49:56.394+05:30 ERROR 3421 --- [PatientManagementSystem] [http-nio-8081-exec-1] c.e.P.exception.GlobalExceptionHandler   : Unhandled Exception: No static resource apidoc.
-2025-01-23T14:49:56.440+05:30  WARN 3421 --- [PatientManagementSystem] [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource apidoc.]
-2025-01-23T14:50:01.296+05:30  INFO 3421 --- [PatientManagementSystem] [http-nio-8081-exec-6] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 263 ms
-2025-01-23T14:51:11.567+05:30  INFO 3421 --- [PatientManagementSystem] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-01-23T14:51:11.571+05:30  INFO 3421 --- [PatientManagementSystem] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-01-23T14:51:11.574+05:30  INFO 3421 --- [PatientManagementSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T14:51:11.577+05:30  INFO 3421 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-01-23T14:51:14.590+05:30  INFO 3421 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-01-23T14:51:15.935+05:30  INFO 3454 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Starting PatientManagementSystemApplication using Java 23.0.1 with PID 3454 (/Users/hrishikeshrana/IdeaProjects/PatientManagementSystem/target/classes started by hrishikeshrana in /Users/hrishikeshrana/IdeaProjects/PatientManagementSystem)
-2025-01-23T14:51:15.935+05:30 DEBUG 3454 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Running with Spring Boot v3.4.0, Spring v6.2.0
-2025-01-23T14:51:15.936+05:30  INFO 3454 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
-2025-01-23T14:51:15.970+05:30  INFO 3454 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-01-23T14:51:15.970+05:30  INFO 3454 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-01-23T14:51:16.400+05:30  INFO 3454 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-23T14:51:16.443+05:30  INFO 3454 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 5 JPA repository interfaces.
-2025-01-23T14:51:16.757+05:30  INFO 3454 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-01-23T14:51:16.765+05:30  INFO 3454 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-23T14:51:16.765+05:30  INFO 3454 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2025-01-23T14:51:16.789+05:30  INFO 3454 --- [PatientManagementSystem] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-01-23T14:51:16.789+05:30  INFO 3454 --- [PatientManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 818 ms
-2025-01-23T14:51:16.874+05:30  INFO 3454 --- [PatientManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-23T14:51:16.901+05:30  INFO 3454 --- [PatientManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
-2025-01-23T14:51:16.915+05:30  INFO 3454 --- [PatientManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-23T14:51:17.057+05:30  INFO 3454 --- [PatientManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-23T14:51:17.069+05:30  INFO 3454 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-23T14:51:19.820+05:30  INFO 3454 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6d82cbff
-2025-01-23T14:51:19.822+05:30  INFO 3454 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-23T14:51:20.130+05:30  WARN 3454 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-01-23T14:51:20.671+05:30  INFO 3454 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 16.6
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-01-23T14:51:21.128+05:30  INFO 3454 --- [PatientManagementSystem] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-23T14:51:26.700+05:30  INFO 3454 --- [PatientManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T14:51:26.965+05:30  WARN 3454 --- [PatientManagementSystem] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-23T14:51:27.017+05:30  WARN 3454 --- [PatientManagementSystem] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.PatientManagementSystem.controller.DepartmentController.deleteDepartmentById(java.lang.Long), but only the first will be used: [@org.springframework.web.bind.annotation.PatchMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={}), @org.springframework.web.bind.annotation.DeleteMapping(consumes={}, headers={}, name="", params={}, path={"/{id}"}, produces={}, value={"/{id}"})]
-2025-01-23T14:51:27.199+05:30  INFO 3454 --- [PatientManagementSystem] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-01-23T14:51:27.220+05:30  INFO 3454 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-01-23T14:51:27.226+05:30  INFO 3454 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Started PatientManagementSystemApplication in 11.56 seconds (process running for 11.828)
-2025-01-23T14:51:31.861+05:30  INFO 3454 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-23T14:51:31.861+05:30  INFO 3454 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-01-23T14:51:31.862+05:30  INFO 3454 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-01-23T14:51:32.263+05:30  INFO 3454 --- [PatientManagementSystem] [http-nio-8081-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 299 ms
-2025-01-23T15:03:48.736+05:30  WARN 3454 --- [PatientManagementSystem] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m28s764ms).
-2025-01-23T15:10:58.585+05:30  INFO 3454 --- [PatientManagementSystem] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-01-23T15:10:58.590+05:30  INFO 3454 --- [PatientManagementSystem] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-01-23T15:10:58.593+05:30  INFO 3454 --- [PatientManagementSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T15:10:58.596+05:30  INFO 3454 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-01-23T15:11:08.604+05:30  WARN 3454 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.pool.HikariPool        : Timed-out waiting for close connection executor to shutdown
-2025-01-23T15:11:08.605+05:30  INFO 3454 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-01-23T15:11:10.452+05:30  INFO 3687 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Starting PatientManagementSystemApplication using Java 23.0.1 with PID 3687 (/Users/hrishikeshrana/IdeaProjects/PatientManagementSystem/target/classes started by hrishikeshrana in /Users/hrishikeshrana/IdeaProjects/PatientManagementSystem)
-2025-01-23T15:11:10.452+05:30 DEBUG 3687 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Running with Spring Boot v3.4.0, Spring v6.2.0
-2025-01-23T15:11:10.453+05:30  INFO 3687 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
-2025-01-23T15:11:10.499+05:30  INFO 3687 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-01-23T15:11:10.499+05:30  INFO 3687 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-01-23T15:11:10.933+05:30  INFO 3687 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-23T15:11:10.965+05:30  INFO 3687 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 5 JPA repository interfaces.
-2025-01-23T15:11:11.262+05:30  INFO 3687 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-01-23T15:11:11.270+05:30  INFO 3687 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-23T15:11:11.270+05:30  INFO 3687 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2025-01-23T15:11:11.291+05:30  INFO 3687 --- [PatientManagementSystem] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-01-23T15:11:11.292+05:30  INFO 3687 --- [PatientManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 792 ms
-2025-01-23T15:11:11.371+05:30  INFO 3687 --- [PatientManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-23T15:11:11.395+05:30  INFO 3687 --- [PatientManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
-2025-01-23T15:11:11.409+05:30  INFO 3687 --- [PatientManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-23T15:11:11.547+05:30  INFO 3687 --- [PatientManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-23T15:11:11.563+05:30  INFO 3687 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-23T15:11:14.557+05:30  INFO 3687 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@747b2020
-2025-01-23T15:11:14.560+05:30  INFO 3687 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-23T15:11:14.841+05:30  WARN 3687 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-01-23T15:11:15.447+05:30  INFO 3687 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 16.6
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-01-23T15:11:15.914+05:30  INFO 3687 --- [PatientManagementSystem] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-23T15:11:21.469+05:30  INFO 3687 --- [PatientManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T15:11:21.744+05:30  WARN 3687 --- [PatientManagementSystem] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-23T15:11:21.794+05:30  WARN 3687 --- [PatientManagementSystem] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.PatientManagementSystem.controller.DepartmentController.deleteDepartmentById(java.lang.Long), but only the first will be used: [@org.springframework.web.bind.annotation.PatchMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={}), @org.springframework.web.bind.annotation.DeleteMapping(consumes={}, headers={}, name="", params={}, path={"/{id}"}, produces={}, value={"/{id}"})]
-2025-01-23T15:11:21.968+05:30  INFO 3687 --- [PatientManagementSystem] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-01-23T15:11:21.989+05:30  INFO 3687 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-01-23T15:11:21.998+05:30  INFO 3687 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Started PatientManagementSystemApplication in 11.785 seconds (process running for 12.052)
-2025-01-23T15:11:30.342+05:30  INFO 3687 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-23T15:11:30.342+05:30  INFO 3687 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-01-23T15:11:30.343+05:30  INFO 3687 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-01-23T15:11:30.748+05:30  INFO 3687 --- [PatientManagementSystem] [http-nio-8081-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 293 ms
-2025-01-23T15:17:07.837+05:30  INFO 3687 --- [PatientManagementSystem] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-01-23T15:17:07.842+05:30  INFO 3687 --- [PatientManagementSystem] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-01-23T15:17:07.844+05:30  INFO 3687 --- [PatientManagementSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T15:17:07.847+05:30  INFO 3687 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-01-23T15:17:10.360+05:30  INFO 3687 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-01-23T15:17:12.061+05:30  INFO 3787 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Starting PatientManagementSystemApplication using Java 23.0.1 with PID 3787 (/Users/hrishikeshrana/IdeaProjects/PatientManagementSystem/target/classes started by hrishikeshrana in /Users/hrishikeshrana/IdeaProjects/PatientManagementSystem)
-2025-01-23T15:17:12.062+05:30 DEBUG 3787 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Running with Spring Boot v3.4.0, Spring v6.2.0
-2025-01-23T15:17:12.062+05:30  INFO 3787 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
-2025-01-23T15:17:12.097+05:30  INFO 3787 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-01-23T15:17:12.098+05:30  INFO 3787 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-01-23T15:17:12.502+05:30  INFO 3787 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-23T15:17:12.534+05:30  INFO 3787 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 5 JPA repository interfaces.
-2025-01-23T15:17:12.816+05:30  INFO 3787 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-01-23T15:17:12.823+05:30  INFO 3787 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-23T15:17:12.823+05:30  INFO 3787 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2025-01-23T15:17:12.841+05:30  INFO 3787 --- [PatientManagementSystem] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-01-23T15:17:12.841+05:30  INFO 3787 --- [PatientManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 743 ms
-2025-01-23T15:17:12.924+05:30  INFO 3787 --- [PatientManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-23T15:17:12.949+05:30  INFO 3787 --- [PatientManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
-2025-01-23T15:17:12.962+05:30  INFO 3787 --- [PatientManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-23T15:17:13.093+05:30  INFO 3787 --- [PatientManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-23T15:17:13.105+05:30  INFO 3787 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-23T15:17:15.732+05:30  INFO 3787 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@51121819
-2025-01-23T15:17:15.734+05:30  INFO 3787 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-23T15:17:16.013+05:30  WARN 3787 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-01-23T15:17:16.553+05:30  INFO 3787 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 16.6
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-01-23T15:17:17.030+05:30  INFO 3787 --- [PatientManagementSystem] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-23T15:17:22.842+05:30  INFO 3787 --- [PatientManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T15:17:23.112+05:30  WARN 3787 --- [PatientManagementSystem] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-23T15:17:23.159+05:30  WARN 3787 --- [PatientManagementSystem] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.PatientManagementSystem.controller.DepartmentController.deleteDepartmentById(java.lang.Long), but only the first will be used: [@org.springframework.web.bind.annotation.PatchMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={}), @org.springframework.web.bind.annotation.DeleteMapping(consumes={}, headers={}, name="", params={}, path={"/{id}"}, produces={}, value={"/{id}"})]
-2025-01-23T15:17:23.265+05:30  WARN 3787 --- [PatientManagementSystem] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'openAPIBuilder' defined in class path resource [org/springdoc/core/configuration/SpringDocConfiguration.class]: Unsatisfied dependency expressed through method 'openAPIBuilder' parameter 0: No qualifying bean of type 'io.swagger.v3.oas.models.OpenAPI' available: expected single matching bean but found 2: customOpenApi,customOpenAPI
-2025-01-23T15:17:23.266+05:30  INFO 3787 --- [PatientManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T15:17:23.267+05:30  INFO 3787 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-01-23T15:17:24.622+05:30  INFO 3787 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-01-23T15:17:24.638+05:30  INFO 3787 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2025-01-23T15:17:24.654+05:30  INFO 3787 --- [PatientManagementSystem] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-01-23T15:17:24.667+05:30 ERROR 3787 --- [PatientManagementSystem] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 0 of method openAPIBuilder in org.springdoc.core.configuration.SpringDocConfiguration required a single bean, but 2 were found:
-	- customOpenApi: defined by method 'customOpenApi' in class path resource [com/example/PatientManagementSystem/Config/SwaggerConfig.class]
-	- customOpenAPI: defined by method 'customOpenAPI' in class path resource [com/example/PatientManagementSystem/Config/SwaggerConfig.class]
-
-This may be due to missing parameter name information
-
-Action:
-
-Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
-
-Ensure that your compiler is configured to use the '-parameters' flag.
-You may need to update both your build tool settings as well as your IDE.
-(See https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-6.x#parameter-name-retention)
-
-
-2025-01-23T15:20:19.990+05:30  INFO 3847 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Starting PatientManagementSystemApplication using Java 23.0.1 with PID 3847 (/Users/hrishikeshrana/IdeaProjects/PatientManagementSystem/target/classes started by hrishikeshrana in /Users/hrishikeshrana/IdeaProjects/PatientManagementSystem)
-2025-01-23T15:20:19.992+05:30 DEBUG 3847 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Running with Spring Boot v3.4.0, Spring v6.2.0
-2025-01-23T15:20:19.992+05:30  INFO 3847 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
-2025-01-23T15:20:20.028+05:30  INFO 3847 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-01-23T15:20:20.028+05:30  INFO 3847 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-01-23T15:20:20.439+05:30  INFO 3847 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-23T15:20:20.472+05:30  INFO 3847 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 5 JPA repository interfaces.
-2025-01-23T15:20:20.762+05:30  INFO 3847 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-01-23T15:20:20.770+05:30  INFO 3847 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-23T15:20:20.770+05:30  INFO 3847 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2025-01-23T15:20:20.789+05:30  INFO 3847 --- [PatientManagementSystem] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-01-23T15:20:20.789+05:30  INFO 3847 --- [PatientManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 760 ms
-2025-01-23T15:20:20.870+05:30  INFO 3847 --- [PatientManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-23T15:20:20.901+05:30  INFO 3847 --- [PatientManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
-2025-01-23T15:20:20.915+05:30  INFO 3847 --- [PatientManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-23T15:20:21.100+05:30  INFO 3847 --- [PatientManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-23T15:20:21.114+05:30  INFO 3847 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-23T15:20:25.349+05:30  INFO 3847 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5f426ac2
-2025-01-23T15:20:25.351+05:30  INFO 3847 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-23T15:20:25.660+05:30  WARN 3847 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-01-23T15:20:26.199+05:30  INFO 3847 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 16.6
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-01-23T15:20:26.706+05:30  INFO 3847 --- [PatientManagementSystem] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-23T15:20:32.686+05:30  INFO 3847 --- [PatientManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T15:20:33.032+05:30  WARN 3847 --- [PatientManagementSystem] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-23T15:20:33.085+05:30  WARN 3847 --- [PatientManagementSystem] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.PatientManagementSystem.controller.DepartmentController.deleteDepartmentById(java.lang.Long), but only the first will be used: [@org.springframework.web.bind.annotation.PatchMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={}), @org.springframework.web.bind.annotation.DeleteMapping(consumes={}, headers={}, name="", params={}, path={"/{id}"}, produces={}, value={"/{id}"})]
-2025-01-23T15:20:33.332+05:30  INFO 3847 --- [PatientManagementSystem] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-01-23T15:20:33.355+05:30  INFO 3847 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-01-23T15:20:33.361+05:30  INFO 3847 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Started PatientManagementSystemApplication in 13.631 seconds (process running for 13.9)
-2025-01-23T15:20:55.622+05:30  INFO 3847 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-23T15:20:55.622+05:30  INFO 3847 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-01-23T15:20:55.623+05:30  INFO 3847 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-01-23T15:20:56.032+05:30  INFO 3847 --- [PatientManagementSystem] [http-nio-8081-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 295 ms
-2025-01-23T15:27:10.211+05:30  INFO 3847 --- [PatientManagementSystem] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-01-23T15:27:10.216+05:30  INFO 3847 --- [PatientManagementSystem] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-01-23T15:27:10.219+05:30  INFO 3847 --- [PatientManagementSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T15:27:10.222+05:30  INFO 3847 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-01-23T15:27:12.942+05:30  INFO 3847 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-01-23T15:27:14.642+05:30  INFO 3935 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Starting PatientManagementSystemApplication using Java 23.0.1 with PID 3935 (/Users/hrishikeshrana/IdeaProjects/PatientManagementSystem/target/classes started by hrishikeshrana in /Users/hrishikeshrana/IdeaProjects/PatientManagementSystem)
-2025-01-23T15:27:14.643+05:30 DEBUG 3935 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Running with Spring Boot v3.4.0, Spring v6.2.0
-2025-01-23T15:27:14.643+05:30  INFO 3935 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
-2025-01-23T15:27:14.678+05:30  INFO 3935 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-01-23T15:27:14.678+05:30  INFO 3935 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-01-23T15:27:15.080+05:30  INFO 3935 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-23T15:27:15.113+05:30  INFO 3935 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 5 JPA repository interfaces.
-2025-01-23T15:27:15.404+05:30  INFO 3935 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-01-23T15:27:15.411+05:30  INFO 3935 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-23T15:27:15.411+05:30  INFO 3935 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2025-01-23T15:27:15.430+05:30  INFO 3935 --- [PatientManagementSystem] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-01-23T15:27:15.430+05:30  INFO 3935 --- [PatientManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 752 ms
-2025-01-23T15:27:15.508+05:30  INFO 3935 --- [PatientManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-23T15:27:15.533+05:30  INFO 3935 --- [PatientManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
-2025-01-23T15:27:15.548+05:30  INFO 3935 --- [PatientManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-23T15:27:15.676+05:30  INFO 3935 --- [PatientManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-23T15:27:15.690+05:30  INFO 3935 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-23T15:27:20.016+05:30  INFO 3935 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@f109d28
-2025-01-23T15:27:20.018+05:30  INFO 3935 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-23T15:27:20.306+05:30  WARN 3935 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-01-23T15:27:20.914+05:30  INFO 3935 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 16.6
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-01-23T15:27:21.378+05:30  INFO 3935 --- [PatientManagementSystem] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-23T15:27:27.836+05:30  INFO 3935 --- [PatientManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T15:27:28.080+05:30  WARN 3935 --- [PatientManagementSystem] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-23T15:27:28.126+05:30  WARN 3935 --- [PatientManagementSystem] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.PatientManagementSystem.controller.DepartmentController.deleteDepartmentById(java.lang.Long), but only the first will be used: [@org.springframework.web.bind.annotation.PatchMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={}), @org.springframework.web.bind.annotation.DeleteMapping(consumes={}, headers={}, name="", params={}, path={"/{id}"}, produces={}, value={"/{id}"})]
-2025-01-23T15:27:28.298+05:30  INFO 3935 --- [PatientManagementSystem] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-01-23T15:27:28.316+05:30  INFO 3935 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-01-23T15:27:28.322+05:30  INFO 3935 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Started PatientManagementSystemApplication in 13.917 seconds (process running for 14.177)
-2025-01-23T15:27:38.428+05:30  INFO 3935 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-23T15:27:38.428+05:30  INFO 3935 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-01-23T15:27:38.429+05:30  INFO 3935 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-01-23T15:27:38.747+05:30 ERROR 3935 --- [PatientManagementSystem] [http-nio-8081-exec-4] c.e.P.exception.GlobalExceptionHandler   : Unhandled Exception: Cannot invoke "Object.getClass()" because "existingSchema" is null
-2025-01-23T15:27:38.753+05:30  WARN 3935 --- [PatientManagementSystem] [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "existingSchema" is null]
-2025-01-23T15:27:42.124+05:30 ERROR 3935 --- [PatientManagementSystem] [http-nio-8081-exec-8] c.e.P.exception.GlobalExceptionHandler   : Unhandled Exception: Cannot invoke "Object.getClass()" because "existingSchema" is null
-2025-01-23T15:27:42.125+05:30  WARN 3935 --- [PatientManagementSystem] [http-nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "existingSchema" is null]
-2025-01-23T15:30:09.508+05:30  INFO 3935 --- [PatientManagementSystem] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-01-23T15:30:09.513+05:30  INFO 3935 --- [PatientManagementSystem] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-01-23T15:30:09.515+05:30  INFO 3935 --- [PatientManagementSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T15:30:09.518+05:30  INFO 3935 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-01-23T15:30:12.396+05:30  INFO 3935 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-01-23T15:31:23.527+05:30  INFO 4005 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Starting PatientManagementSystemApplication using Java 23.0.1 with PID 4005 (/Users/hrishikeshrana/IdeaProjects/PatientManagementSystem/target/classes started by hrishikeshrana in /Users/hrishikeshrana/IdeaProjects/PatientManagementSystem)
-2025-01-23T15:31:23.528+05:30 DEBUG 4005 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Running with Spring Boot v3.4.0, Spring v6.2.0
-2025-01-23T15:31:23.528+05:30  INFO 4005 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
-2025-01-23T15:31:23.561+05:30  INFO 4005 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-01-23T15:31:23.562+05:30  INFO 4005 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-01-23T15:31:23.969+05:30  INFO 4005 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-23T15:31:24.004+05:30  INFO 4005 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 5 JPA repository interfaces.
-2025-01-23T15:31:24.283+05:30  INFO 4005 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-01-23T15:31:24.290+05:30  INFO 4005 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-23T15:31:24.291+05:30  INFO 4005 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2025-01-23T15:31:24.309+05:30  INFO 4005 --- [PatientManagementSystem] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-01-23T15:31:24.309+05:30  INFO 4005 --- [PatientManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 747 ms
-2025-01-23T15:31:24.385+05:30  INFO 4005 --- [PatientManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-23T15:31:24.411+05:30  INFO 4005 --- [PatientManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
-2025-01-23T15:31:24.424+05:30  INFO 4005 --- [PatientManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-23T15:31:24.555+05:30  INFO 4005 --- [PatientManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-23T15:31:24.569+05:30  INFO 4005 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-23T15:31:27.962+05:30  INFO 4005 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5fe51476
-2025-01-23T15:31:27.965+05:30  INFO 4005 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-23T15:31:28.249+05:30  WARN 4005 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-01-23T15:31:28.804+05:30  INFO 4005 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 16.6
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-01-23T15:31:29.265+05:30  INFO 4005 --- [PatientManagementSystem] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-23T15:31:34.971+05:30  INFO 4005 --- [PatientManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T15:31:35.228+05:30  WARN 4005 --- [PatientManagementSystem] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-23T15:31:35.279+05:30  WARN 4005 --- [PatientManagementSystem] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.PatientManagementSystem.controller.DepartmentController.deleteDepartmentById(java.lang.Long), but only the first will be used: [@org.springframework.web.bind.annotation.PatchMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={}), @org.springframework.web.bind.annotation.DeleteMapping(consumes={}, headers={}, name="", params={}, path={"/{id}"}, produces={}, value={"/{id}"})]
-2025-01-23T15:31:35.463+05:30  INFO 4005 --- [PatientManagementSystem] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-01-23T15:31:35.481+05:30  INFO 4005 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-01-23T15:31:35.488+05:30  INFO 4005 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Started PatientManagementSystemApplication in 12.2 seconds (process running for 12.451)
-2025-01-23T15:32:06.868+05:30  INFO 4005 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-23T15:32:06.868+05:30  INFO 4005 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-01-23T15:32:06.869+05:30  INFO 4005 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-01-23T15:32:07.187+05:30 ERROR 4005 --- [PatientManagementSystem] [http-nio-8081-exec-4] c.e.P.exception.GlobalExceptionHandler   : Unhandled Exception: Cannot invoke "Object.getClass()" because "existingSchema" is null
-2025-01-23T15:32:07.193+05:30  WARN 4005 --- [PatientManagementSystem] [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "existingSchema" is null]
-2025-01-23T15:32:08.264+05:30 ERROR 4005 --- [PatientManagementSystem] [http-nio-8081-exec-8] c.e.P.exception.GlobalExceptionHandler   : Unhandled Exception: Cannot invoke "Object.getClass()" because "existingSchema" is null
-2025-01-23T15:32:08.265+05:30  WARN 4005 --- [PatientManagementSystem] [http-nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "existingSchema" is null]
-2025-01-23T15:32:08.438+05:30 ERROR 4005 --- [PatientManagementSystem] [http-nio-8081-exec-2] c.e.P.exception.GlobalExceptionHandler   : Unhandled Exception: Cannot invoke "Object.getClass()" because "existingSchema" is null
-2025-01-23T15:32:08.438+05:30  WARN 4005 --- [PatientManagementSystem] [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "existingSchema" is null]
-2025-01-23T15:32:08.809+05:30 ERROR 4005 --- [PatientManagementSystem] [http-nio-8081-exec-6] c.e.P.exception.GlobalExceptionHandler   : Unhandled Exception: Cannot invoke "Object.getClass()" because "existingSchema" is null
-2025-01-23T15:32:08.810+05:30  WARN 4005 --- [PatientManagementSystem] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "existingSchema" is null]
-2025-01-23T15:32:08.980+05:30 ERROR 4005 --- [PatientManagementSystem] [http-nio-8081-exec-10] c.e.P.exception.GlobalExceptionHandler   : Unhandled Exception: Cannot invoke "Object.getClass()" because "existingSchema" is null
-2025-01-23T15:32:08.980+05:30  WARN 4005 --- [PatientManagementSystem] [http-nio-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "existingSchema" is null]
-2025-01-23T15:32:09.127+05:30 ERROR 4005 --- [PatientManagementSystem] [http-nio-8081-exec-4] c.e.P.exception.GlobalExceptionHandler   : Unhandled Exception: Cannot invoke "Object.getClass()" because "existingSchema" is null
-2025-01-23T15:32:09.128+05:30  WARN 4005 --- [PatientManagementSystem] [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "existingSchema" is null]
-2025-01-23T15:32:09.285+05:30 ERROR 4005 --- [PatientManagementSystem] [http-nio-8081-exec-8] c.e.P.exception.GlobalExceptionHandler   : Unhandled Exception: Cannot invoke "Object.getClass()" because "existingSchema" is null
-2025-01-23T15:32:09.285+05:30  WARN 4005 --- [PatientManagementSystem] [http-nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "existingSchema" is null]
-2025-01-23T15:32:09.462+05:30 ERROR 4005 --- [PatientManagementSystem] [http-nio-8081-exec-2] c.e.P.exception.GlobalExceptionHandler   : Unhandled Exception: Cannot invoke "Object.getClass()" because "existingSchema" is null
-2025-01-23T15:32:09.463+05:30  WARN 4005 --- [PatientManagementSystem] [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "existingSchema" is null]
-2025-01-23T15:32:19.546+05:30  INFO 4005 --- [PatientManagementSystem] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-01-23T15:32:19.550+05:30  INFO 4005 --- [PatientManagementSystem] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-01-23T15:32:19.553+05:30  INFO 4005 --- [PatientManagementSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T15:32:19.556+05:30  INFO 4005 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-01-23T15:32:22.322+05:30  INFO 4005 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-01-23T15:32:23.949+05:30  INFO 4028 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Starting PatientManagementSystemApplication using Java 23.0.1 with PID 4028 (/Users/hrishikeshrana/IdeaProjects/PatientManagementSystem/target/classes started by hrishikeshrana in /Users/hrishikeshrana/IdeaProjects/PatientManagementSystem)
-2025-01-23T15:32:23.950+05:30 DEBUG 4028 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Running with Spring Boot v3.4.0, Spring v6.2.0
-2025-01-23T15:32:23.950+05:30  INFO 4028 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
-2025-01-23T15:32:23.983+05:30  INFO 4028 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-01-23T15:32:23.984+05:30  INFO 4028 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-01-23T15:32:24.389+05:30  INFO 4028 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-23T15:32:24.423+05:30  INFO 4028 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 5 JPA repository interfaces.
-2025-01-23T15:32:24.722+05:30  INFO 4028 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-01-23T15:32:24.730+05:30  INFO 4028 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-23T15:32:24.730+05:30  INFO 4028 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2025-01-23T15:32:24.752+05:30  INFO 4028 --- [PatientManagementSystem] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-01-23T15:32:24.752+05:30  INFO 4028 --- [PatientManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 768 ms
-2025-01-23T15:32:24.834+05:30  INFO 4028 --- [PatientManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-23T15:32:24.861+05:30  INFO 4028 --- [PatientManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
-2025-01-23T15:32:24.875+05:30  INFO 4028 --- [PatientManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-23T15:32:25.008+05:30  INFO 4028 --- [PatientManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-23T15:32:25.021+05:30  INFO 4028 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-23T15:32:27.863+05:30  INFO 4028 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5f426ac2
-2025-01-23T15:32:27.865+05:30  INFO 4028 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-23T15:32:28.144+05:30  WARN 4028 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-01-23T15:32:28.807+05:30  INFO 4028 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 16.6
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-01-23T15:32:29.280+05:30  INFO 4028 --- [PatientManagementSystem] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-23T15:32:35.337+05:30  INFO 4028 --- [PatientManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T15:32:35.612+05:30  WARN 4028 --- [PatientManagementSystem] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-23T15:32:35.668+05:30  WARN 4028 --- [PatientManagementSystem] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.PatientManagementSystem.controller.DepartmentController.deleteDepartmentById(java.lang.Long), but only the first will be used: [@org.springframework.web.bind.annotation.PatchMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={}), @org.springframework.web.bind.annotation.DeleteMapping(consumes={}, headers={}, name="", params={}, path={"/{id}"}, produces={}, value={"/{id}"})]
-2025-01-23T15:32:35.843+05:30  INFO 4028 --- [PatientManagementSystem] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-01-23T15:32:35.866+05:30  INFO 4028 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-01-23T15:32:35.875+05:30  INFO 4028 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Started PatientManagementSystemApplication in 12.159 seconds (process running for 12.421)
-2025-01-23T15:33:34.538+05:30  INFO 4028 --- [PatientManagementSystem] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-01-23T15:33:34.543+05:30  INFO 4028 --- [PatientManagementSystem] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-01-23T15:33:34.547+05:30  INFO 4028 --- [PatientManagementSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T15:33:34.549+05:30  INFO 4028 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-01-23T15:33:37.523+05:30  INFO 4028 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-01-23T15:33:49.069+05:30  INFO 4055 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Starting PatientManagementSystemApplication using Java 23.0.1 with PID 4055 (/Users/hrishikeshrana/IdeaProjects/PatientManagementSystem/target/classes started by hrishikeshrana in /Users/hrishikeshrana/IdeaProjects/PatientManagementSystem)
-2025-01-23T15:33:49.069+05:30 DEBUG 4055 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Running with Spring Boot v3.4.0, Spring v6.2.0
-2025-01-23T15:33:49.070+05:30  INFO 4055 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
-2025-01-23T15:33:49.099+05:30  INFO 4055 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-01-23T15:33:49.100+05:30  INFO 4055 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-01-23T15:33:49.529+05:30  INFO 4055 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-23T15:33:49.567+05:30  INFO 4055 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 5 JPA repository interfaces.
-2025-01-23T15:33:49.877+05:30  INFO 4055 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-01-23T15:33:49.884+05:30  INFO 4055 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-23T15:33:49.885+05:30  INFO 4055 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2025-01-23T15:33:49.909+05:30  INFO 4055 --- [PatientManagementSystem] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-01-23T15:33:49.912+05:30  INFO 4055 --- [PatientManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 812 ms
-2025-01-23T15:33:49.992+05:30  INFO 4055 --- [PatientManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-23T15:33:50.019+05:30  INFO 4055 --- [PatientManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
-2025-01-23T15:33:50.033+05:30  INFO 4055 --- [PatientManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-23T15:33:50.171+05:30  INFO 4055 --- [PatientManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-23T15:33:50.185+05:30  INFO 4055 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-23T15:33:53.465+05:30  INFO 4055 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@11890677
-2025-01-23T15:33:53.466+05:30  INFO 4055 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-23T15:33:53.799+05:30  WARN 4055 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-01-23T15:33:54.323+05:30  INFO 4055 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 16.6
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-01-23T15:33:54.774+05:30  INFO 4055 --- [PatientManagementSystem] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-23T15:34:00.477+05:30  INFO 4055 --- [PatientManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T15:34:00.727+05:30  WARN 4055 --- [PatientManagementSystem] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-23T15:34:00.774+05:30  WARN 4055 --- [PatientManagementSystem] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.PatientManagementSystem.controller.DepartmentController.deleteDepartmentById(java.lang.Long), but only the first will be used: [@org.springframework.web.bind.annotation.PatchMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={}), @org.springframework.web.bind.annotation.DeleteMapping(consumes={}, headers={}, name="", params={}, path={"/{id}"}, produces={}, value={"/{id}"})]
-2025-01-23T15:34:00.935+05:30  INFO 4055 --- [PatientManagementSystem] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-01-23T15:34:00.955+05:30  INFO 4055 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-01-23T15:34:00.961+05:30  INFO 4055 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Started PatientManagementSystemApplication in 12.132 seconds (process running for 12.4)
-2025-01-23T15:34:28.736+05:30  INFO 4055 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-23T15:34:28.737+05:30  INFO 4055 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-01-23T15:34:28.738+05:30  INFO 4055 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-01-23T15:34:29.117+05:30  INFO 4055 --- [PatientManagementSystem] [http-nio-8081-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 279 ms
-2025-01-23T15:37:34.480+05:30  INFO 4055 --- [PatientManagementSystem] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-01-23T15:37:34.488+05:30  INFO 4055 --- [PatientManagementSystem] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-01-23T15:37:34.492+05:30  INFO 4055 --- [PatientManagementSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T15:37:34.494+05:30  INFO 4055 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-01-23T15:37:37.279+05:30  INFO 4055 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-01-23T15:37:39.105+05:30  INFO 4142 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Starting PatientManagementSystemApplication using Java 23.0.1 with PID 4142 (/Users/hrishikeshrana/IdeaProjects/PatientManagementSystem/target/classes started by hrishikeshrana in /Users/hrishikeshrana/IdeaProjects/PatientManagementSystem)
-2025-01-23T15:37:39.105+05:30 DEBUG 4142 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Running with Spring Boot v3.4.0, Spring v6.2.0
-2025-01-23T15:37:39.106+05:30  INFO 4142 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
-2025-01-23T15:37:39.141+05:30  INFO 4142 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-01-23T15:37:39.141+05:30  INFO 4142 --- [PatientManagementSystem] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-01-23T15:37:39.557+05:30  INFO 4142 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-23T15:37:39.590+05:30  INFO 4142 --- [PatientManagementSystem] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 5 JPA repository interfaces.
-2025-01-23T15:37:39.900+05:30  INFO 4142 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-01-23T15:37:39.911+05:30  INFO 4142 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-23T15:37:39.911+05:30  INFO 4142 --- [PatientManagementSystem] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2025-01-23T15:37:39.931+05:30  INFO 4142 --- [PatientManagementSystem] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-01-23T15:37:39.932+05:30  INFO 4142 --- [PatientManagementSystem] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 790 ms
-2025-01-23T15:37:40.015+05:30  INFO 4142 --- [PatientManagementSystem] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-23T15:37:40.041+05:30  INFO 4142 --- [PatientManagementSystem] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
-2025-01-23T15:37:40.055+05:30  INFO 4142 --- [PatientManagementSystem] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-23T15:37:40.192+05:30  INFO 4142 --- [PatientManagementSystem] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-23T15:37:40.205+05:30  INFO 4142 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-23T15:37:43.179+05:30  INFO 4142 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@26f9e875
-2025-01-23T15:37:43.181+05:30  INFO 4142 --- [PatientManagementSystem] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-23T15:37:43.489+05:30  WARN 4142 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-01-23T15:37:44.018+05:30  INFO 4142 --- [PatientManagementSystem] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 16.6
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-01-23T15:37:44.490+05:30  INFO 4142 --- [PatientManagementSystem] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-23T15:37:50.125+05:30  INFO 4142 --- [PatientManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T15:37:50.382+05:30  WARN 4142 --- [PatientManagementSystem] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-23T15:37:50.605+05:30  INFO 4142 --- [PatientManagementSystem] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-01-23T15:37:50.626+05:30  INFO 4142 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-01-23T15:37:50.634+05:30  INFO 4142 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Started PatientManagementSystemApplication in 11.774 seconds (process running for 12.034)
-2025-01-23T15:37:59.748+05:30  INFO 4142 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-23T15:37:59.749+05:30  INFO 4142 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-01-23T15:37:59.749+05:30  INFO 4142 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-01-23T15:38:00.145+05:30  INFO 4142 --- [PatientManagementSystem] [http-nio-8081-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 269 ms
-2025-01-23T15:40:53.653+05:30  INFO 4142 --- [PatientManagementSystem] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-01-23T15:40:53.659+05:30  INFO 4142 --- [PatientManagementSystem] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-01-23T15:40:53.661+05:30  INFO 4142 --- [PatientManagementSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-01-23T15:40:53.664+05:30  INFO 4142 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-01-23T15:40:56.445+05:30  INFO 4142 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-27T18:53:34.683+05:30  INFO 8130 --- [PatientManagementSystem] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-27T18:53:40.737+05:30  INFO 8130 --- [PatientManagementSystem] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-27T18:53:40.975+05:30  WARN 8130 --- [PatientManagementSystem] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-27T18:53:41.188+05:30  INFO 8130 --- [PatientManagementSystem] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-27T18:53:41.209+05:30  INFO 8130 --- [PatientManagementSystem] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-01-27T18:53:41.215+05:30  INFO 8130 --- [PatientManagementSystem] [restartedMain] c.e.P.PatientManagementSystemApplication : Started PatientManagementSystemApplication in 11.967 seconds (process running for 12.225)
+2025-01-27T18:54:11.472+05:30  INFO 8130 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27T18:54:11.472+05:30  INFO 8130 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-27T18:54:11.473+05:30  INFO 8130 --- [PatientManagementSystem] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-01-27T18:54:11.923+05:30  INFO 8130 --- [PatientManagementSystem] [http-nio-8081-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 310 ms
+2025-01-27T18:56:01.711+05:30  INFO 8130 --- [PatientManagementSystem] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27T18:56:01.716+05:30  INFO 8130 --- [PatientManagementSystem] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-01-27T18:56:01.718+05:30  INFO 8130 --- [PatientManagementSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-27T18:56:01.721+05:30  INFO 8130 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-27T18:56:04.699+05:30  INFO 8130 --- [PatientManagementSystem] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
