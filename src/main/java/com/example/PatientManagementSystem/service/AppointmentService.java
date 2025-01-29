@@ -95,7 +95,7 @@ public class AppointmentService {
 
             // Return filtered results
             if (search != null && !search.isEmpty()) {
-                return appointmentDAO.findByAppointmentId(Long.valueOf(search), pageable);
+                return appointmentDAO.findByAppointmentId(search, pageable);
             }
             return appointmentDAO.findAll(pageable);
         } catch (Exception ex) {

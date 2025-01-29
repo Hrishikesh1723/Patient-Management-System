@@ -95,7 +95,7 @@ public class PatientService {
 
             // Return filtered results
             if (search != null && !search.isEmpty()) {
-                return patientDAO.findByPatientIdContainingOrNameContaining(Long.valueOf(search), search, pageable);
+                return patientDAO.findByPatientIdContainingOrNameContaining(search, pageable);
             }
             return patientDAO.findAll(pageable);
         } catch (Exception ex) {

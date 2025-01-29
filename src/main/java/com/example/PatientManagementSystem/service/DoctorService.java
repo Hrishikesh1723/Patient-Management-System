@@ -93,7 +93,7 @@ public class DoctorService {
 
             // Return filtered results
             if (search != null && !search.isEmpty()) {
-                return doctorDAO.findByDoctorIdContainingOrDoctorNameContaining(Long.valueOf(search), search, pageable);
+                return doctorDAO.findByDoctorIdContainingOrDoctorNameContaining(search, pageable);
             }
             return doctorDAO.findAll(pageable);
         } catch (Exception ex) {

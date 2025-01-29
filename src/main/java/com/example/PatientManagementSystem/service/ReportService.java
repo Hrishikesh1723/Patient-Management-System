@@ -93,7 +93,7 @@ public class ReportService {
 
             // Return filtered results
             if (search != null && !search.isEmpty()) {
-                return reportDAO.findByReportIdContainingOrReportNameContaining(Long.valueOf(search), search, pageable);
+                return reportDAO.findByReportIdContainingOrReportNameContaining(search, pageable);
             }
             return reportDAO.findAll(pageable);
         } catch (Exception ex) {

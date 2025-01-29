@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 
@@ -25,11 +26,14 @@ public interface ReportDAO extends JpaRepository<Report, Long> {
     /**
      * Finds a paginated list of reports by report ID.
      *
-     * @param reportId The ID of the report to search for.
+     * @param search The ID of the report to search for.
      * @param pageable      Pagination and sorting details.
      * @return A page of reports matching the specified ID.
      */
-    Page<Report> findByReportIdContainingOrReportNameContaining(Long reportId, String reportName, Pageable pageable);
+    @Query("SELECT r FROM Report r WHERE " +
+            "(:search IS NULL OR CAST(r.reportId AS string) LIKE %:search%) OR " +
+            "(:search IS NULL OR r.reportName LIKE %:search%)")
+    Page<Report> findByReportIdContainingOrReportNameContaining(String search, Pageable pageable);
 
     /**
      * Safely retrieves a report by its ID with logging and error handling.

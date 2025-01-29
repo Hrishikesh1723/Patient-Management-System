@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 
 import java.util.Optional;
 
@@ -21,11 +22,13 @@ public interface AppointmentDAO extends JpaRepository<Appointment, Long>{
     /**
      * Finds a paginated list of appointments by appointment ID.
      *
-     * @param appointmentId The ID of the appointment to search for.
+     * @param search The ID of the appointment to search for.
      * @param pageable      Pagination and sorting details.
      * @return A page of appointments matching the specified ID.
      */
-    Page<Appointment> findByAppointmentId(Long appointmentId, Pageable pageable);
+    @Query("SELECT a FROM Appointment a WHERE " +
+            "(:search IS NULL OR CAST(a.appointmentId AS string) LIKE %:search%)")
+    Page<Appointment> findByAppointmentId(String search, Pageable pageable);
 
     /**
      * Safely retrieves an appointment by its ID with logging and error handling.

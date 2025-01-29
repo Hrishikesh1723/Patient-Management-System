@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 
@@ -25,11 +26,14 @@ public interface PatientDAO extends JpaRepository<Patient, Long> {
     /**
      * Finds a paginated list of patients by patient ID.
      *
-     * @param patientId The ID of the patient to search for.
+     * @param search The ID of the patient to search for.
      * @param pageable      Pagination and sorting details.
      * @return A page of patients matching the specified ID.
      */
-    Page<Patient> findByPatientIdContainingOrNameContaining(Long patientId, String name, Pageable pageable);
+    @Query("SELECT p FROM Patient p WHERE " +
+            "(:search IS NULL OR CAST(p.patientId AS string) LIKE %:search%) OR " +
+            "(:search IS NULL OR p.name LIKE %:search%)")
+    Page<Patient> findByPatientIdContainingOrNameContaining(String search, Pageable pageable);
 
     /**
      * Safely retrieves a patient by its ID with logging and error handling.

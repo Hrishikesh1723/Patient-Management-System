@@ -93,7 +93,7 @@ public class DepartmentService {
 
             // Return filtered results
             if (search != null && !search.isEmpty()) {
-                return departmentDAO.findByDepartmentIdContainingOrDepartmentNameContaining(Long.valueOf(search), search, pageable);
+                return departmentDAO.findByDepartmentIdContainingOrDepartmentNameContaining(search, pageable);
             }
             return departmentDAO.findAll(pageable);
         } catch (Exception ex) {

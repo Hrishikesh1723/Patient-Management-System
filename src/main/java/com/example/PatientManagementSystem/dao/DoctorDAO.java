@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 
@@ -25,11 +26,14 @@ public interface DoctorDAO extends JpaRepository<Doctor, Long> {
     /**
      * Finds a paginated list of doctors by doctor ID.
      *
-     * @param doctorId The ID of the doctor to search for.
+     * @param search The ID or name of the doctor to search for.
      * @param pageable      Pagination and sorting details.
      * @return A page of doctors matching the specified ID.
      */
-    Page<Doctor> findByDoctorIdContainingOrDoctorNameContaining(Long doctorId, String doctorName, Pageable pageable);
+    @Query("SELECT d FROM Doctor d WHERE " +
+            "(:search IS NULL OR CAST(d.doctorId AS string) LIKE %:search%) OR " +
+            "(:search IS NULL OR d.doctorName LIKE %:search%)")
+    Page<Doctor> findByDoctorIdContainingOrDoctorNameContaining(String search, Pageable pageable);
 
     /**
      * Safely retrieves a doctor by its ID with logging and error handling.

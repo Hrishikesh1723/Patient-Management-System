@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
@@ -25,11 +26,14 @@ public interface DepartmentDAO extends JpaRepository<Department, Long> {
     /**
      * Finds a paginated list of departments by department ID.
      *
-     * @param departmentId The ID of the department to search for.
+     * @param search The ID or name of the department to search for.
      * @param pageable      Pagination and sorting details.
      * @return A page of departments matching the specified ID.
      */
-    Page<Department> findByDepartmentIdContainingOrDepartmentNameContaining(Long departmentId, String departmentName, Pageable pageable);
+    @Query("SELECT d FROM Department d WHERE " +
+            "(:search IS NULL OR CAST(d.departmentId AS string) LIKE %:search%) OR " +
+            "(:search IS NULL OR d.departmentName LIKE %:search%)")
+    Page<Department> findByDepartmentIdContainingOrDepartmentNameContaining(String search, Pageable pageable);
 
     /**
      * Safely retrieves a department by its ID with logging and error handling.
